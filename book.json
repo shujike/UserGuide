@@ -10,10 +10,6 @@
         "github"
     ],
     "pluginsConfig": {
-        "editlink": {
-            "base": "https://github.com/shujike/UserGuide/blob/master",
-            "label": "编辑本页"
-        },
         "github": {
             "url": "https://github.com/shujike/UserGuide"
         }

@@ -3,7 +3,7 @@
 * [快速入门]()
     * [申请试用](快速入门/申请试用.md)
     * [安装JS SDK](快速入门/安装JSSDK.md)
-    * [安装Andruid SDK](快速入门/安装AndroidSDK.md)
+    * [安装Android SDK](快速入门/安装AndroidSDK.md)
     * [安装iOS SDK](快速入门/安装iOSSDK.md)
 * [自定义设置]()
     * [自定义事件](自定义设置/自定义事件.md)
