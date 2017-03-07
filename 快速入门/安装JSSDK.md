@@ -9,6 +9,7 @@
     
         <script>
            var _dgt = _dgt || [];
+           window._dgt = _dgt;
                (function () {
                    _dgt.push(['setSiteId', '替换成您的网站ID']);
                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
