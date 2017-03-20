@@ -11,16 +11,16 @@
 
 ###2.基础功能集成
 
-###2.1 配置AppKey 
+2.1 配置AppKey 
 
 在AndroidManifest.xml 中配置Appkey，代码如下：
-![](http://www.shujike.com/images/android_guide_appkey.jpg)
+![](http://www.shujike.com/images/android_guide_appkey.png)
 
 2.2 添加权限
 
 SDK所需权限如下：
 
-![](http://www.shujike.com/images/android_guide_permis.jpg)
+![](http://www.shujike.com/images/android_guide_permis.png)
 
 在build.gradle 中配置 targetSdkVersion=x(x<23)  可跳过权限检测。
 
