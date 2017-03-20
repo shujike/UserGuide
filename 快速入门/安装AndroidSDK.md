@@ -75,7 +75,8 @@ SjkAgent.postTags(SampleActivity.this, "自定义的属性id");
 ###7.按用户ID统计
 
 用户登录后调用
-SjkAgent.bindUserId(context, id); id为用户唯一标示
+SjkAgent.bindUserId(context, id); id为用户唯一标识。
+
 实现用户留存和活跃分析等。
 
 ###8.技术支持  
