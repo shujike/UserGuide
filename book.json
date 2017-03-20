@@ -6,7 +6,6 @@
         "website": "styles/website.css"
     },
     "plugins": [
-        "editlink",
         "github"
     ],
     "pluginsConfig": {
