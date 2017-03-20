@@ -72,7 +72,13 @@ SjkAgent.postTags(SampleActivity.this, "自定义的属性id");
 在每个Activity的onResume方法中调用 SjkAgent.onResume(this); onPause方法中调用 SjkAgent.onPause(this);
 ![](http://www.shujike.com/images/android_guide_page.png)
 
-###7.技术支持 
+###7.按用户ID统计
+
+用户登录后调用
+SjkAgent.bindUserId(context, id); id为用户唯一标示
+实现用户留存和活跃分析等。
+
+###8.技术支持  
 
 发现问题可联系我公司客服或技术人员进行解答。
 
