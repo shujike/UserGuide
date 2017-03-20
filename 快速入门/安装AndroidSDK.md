@@ -30,7 +30,9 @@ SDK所需权限如下：
 
 3.1自定义事件接口：
 
-SjkAgent.onEvent(SampleActivity.this, "自定义的事件id"); 在需要统计事件的位置加入此行代码。
+SjkAgent.onEvent(SampleActivity.this, "自定义的事件id"); 
+
+在需要统计事件的位置加入此行代码。
 
 3.2自定义事件id获得：
 
@@ -46,7 +48,9 @@ SjkAgent.onEvent(SampleActivity.this, "自定义的事件id"); 在需要统计�
 
 4.1自定义属性接口：
 
-SjkAgent.postTags(SampleActivity.this, "自定义的属性id"); 您可以通过添加自定义用户属性,对用户进行细分分析
+SjkAgent.postTags(SampleActivity.this, "自定义的属性id"); 
+
+您可以通过添加自定义用户属性,对用户进行细分分析
 
 4.2自定义属性id获得：
 
