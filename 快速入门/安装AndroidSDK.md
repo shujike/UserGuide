@@ -65,7 +65,6 @@ SjkAgent.postTags(SampleActivity.this, "自定义的属性id");
 在SDK初始化时可以设置debug模式，此模式下可查看SDK log 。代码如下
 
         SjkAgent.setDebugEnabled(true);
-        SjkAgent.setDebugLevel(SjkAgent.LogLevel.Verbose);
         SjkAgent.init(this);
 
 ###6.页面访问统计
