@@ -38,7 +38,7 @@ SjkAgent.onEvent(SampleActivity.this, "自定义的事件id");
 
 自定义事件id 尽量使用英文或拼音，不建议使用特殊字符或中文，且长度不能超过128个字节；
 
-使用自定义事件功能请先登陆数极客官网 （www.shujike.com）， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。
+使用自定义事件功能请先登陆数极客官网(<http://www.shujike.com>)， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。
 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。
 ![](http://www.shujike.com/images/android_guide_event1.png)
 
