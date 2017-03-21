@@ -7,7 +7,15 @@
 
 1.2 下载和导入SDK
 
-官网(http://www.shujike.com)直接下载。
+官网直接下载。(http://www.shujike.com)
+
+(http://www.shujike.com)
+
+<http://www.shujike.com>
+
+<http://www.shujike.com>下载
+
+“http://www.shujike.com”下载
 
 ###2.基础功能集成
 
