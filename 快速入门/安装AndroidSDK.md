@@ -64,9 +64,9 @@ SjkAgent.postTags(SampleActivity.this, "自定义的属性id");
 ###5.调试模式
 在SDK初始化时可以设置debug模式，此模式下可查看SDK log 。代码如下
 
-        SjkAgent.init(this);
         SjkAgent.setDebugEnabled(true);
         SjkAgent.setDebugLevel(SjkAgent.LogLevel.Verbose);
+        SjkAgent.init(this);
 
 ###6.页面访问统计
 在每个Activity的onResume方法中调用 SjkAgent.onResume(this); onPause方法中调用 SjkAgent.onPause(this);
