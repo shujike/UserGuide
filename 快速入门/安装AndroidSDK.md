@@ -5,9 +5,25 @@
 
 集成数极客SDK之前，您首先需要到数极客官网(<http://www.shujike.com>)注册并且添加新应用，获得Appkey。
 
-1.2 下载和导入SDK
+1.2 下载和集成SDK
 
 官网(<http://www.shujike.com>)直接下载。
+
+Eclipse 集成 ：
+
+将下载好的jar包放入工程的 libs 目录下，在Eclipse中右键工程根目录，选择Properties -> Java Build Path -> Libraries，然后点击Add External JARs... 选择指向jar的路径，点击OK，即导入成功。（ADT17及以上不需要手动导入）
+
+Android studio 集成 ：
+
+将下载好的jar包放入工程的 libs 目录下，之后在gradle中添加依赖。在项目的build.gradle 中添加如下代码
+
+dependencies {
+    ......
+    compile files('libs/shujike-sdk-1.0.jar')
+    ......
+}
+
+之后clean project 即导入成功。
 
 ###2.基础功能集成
 
@@ -51,7 +67,6 @@ SjkAgent.onEvent(SampleActivity.this, "自定义的事件id");
 SjkAgent.postTags(SampleActivity.this, "自定义的属性id"); 
 
 您可以通过添加自定义用户属性,对用户进行细分分析
-
 4.2自定义属性id获得：
 
 自定义属性id 尽量使用英文或拼音，不建议使用特殊字符或中文，且长度不能超过128个字节；
