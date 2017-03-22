@@ -24,7 +24,7 @@ dependencies {
     compile files('libs/shujike-sdk-1.0.jar')
 
     ......
-    
+
 }
 
 之后clean project 即导入成功。
@@ -41,6 +41,17 @@ dependencies {
 SDK所需权限如下：
 
 ![](http://www.shujike.com/images/android_guide_permis.png)
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 在build.gradle 中配置 targetSdkVersion=x(x<23)  可跳过权限检测。
 
