@@ -1,4 +1,4 @@
-##安装Android SDK 
+##集成Android SDK 
 ###1.集成准备
 
 1.1获取AppKey
