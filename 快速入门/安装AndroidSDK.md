@@ -11,7 +11,7 @@
 
 Eclipse 集成 ：
 
-将下载好的jar包放入工程的 libs 目录下，在Eclipse中右键工程根目录，选择Properties -> Java Build Path -> Libraries，然后点击Add External JARs... 选择指向jar的路径，点击OK，即导入成功。（ADT17及以上不需要手动导入）
+将下载好的jar包放入工程的 libs 目录下，在Eclipse中右键工程根目录，选择Properties -> Java Build Path -> Libraries，然后点击Add External JARs... 选择指向jar的路径，点击OK，即导入成功（ADT17及以上不需要手动导入）。
 
 Android studio 集成 ：
 
