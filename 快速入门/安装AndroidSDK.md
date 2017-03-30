@@ -63,13 +63,7 @@ SDK所需权限如下：
 
 在需要统计事件的位置加入以下代码。
 
-                HashMap<String, String> eventAttMap = new HashMap<String, String>();
-                eventAttMap.put("m_Q1", "1"); //value 为自定义内容，根据统计需求填写
-                eventAttMap.put("m_Q2", "2");
-                eventAttMap.put("d_Q3", "3");
-                SjkAgent.postEvent(SampleActivity.this, "自定义事件id", eventAttMap);
-
-
+                SjkAgent.postEvent(SampleActivity.this, "自定义事件id", “事件属性的Map”);
 
 3.2自定义事件id获得：
 
@@ -77,7 +71,18 @@ SDK所需权限如下：
 
 使用自定义事件功能请先登陆数极客官网(<http://www.shujike.com>)， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。
 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。
+
+例：
+                
+                HashMap<String, String> eventAttMap = new HashMap<String, String>();
+                eventAttMap.put("m_Q1", "1"); //value 为自定义内容，根据统计需求填写
+                eventAttMap.put("m_Q2", "2");
+                eventAttMap.put("d_Q3", "3");
+                SjkAgent.postEvent(SampleActivity.this, "yyq", eventAttMap);
+
 ![](http://www.shujike.com/images/android_guide_event1.png)
+
+![](http://www.shujike.com/images/android_guide_event3.png)
 
 ![](http://www.shujike.com/images/android_guide_event2.png)
 
