@@ -61,9 +61,15 @@ SDK所需权限如下：
 
 3.1自定义事件接口：
 
-SjkAgent.onEvent(SampleActivity.this, "自定义的事件id"); 
+在需要统计事件的位置加入以下代码。
 
-在需要统计事件的位置加入此行代码。
+                HashMap<String, String> eventAttMap = new HashMap<String, String>();
+                eventAttMap.put("m_Q1", "1"); //value 为自定义内容，根据统计需求填写
+                eventAttMap.put("m_Q2", "2");
+                eventAttMap.put("d_Q3", "3");
+                SjkAgent.postEvent(SampleActivity.this, "自定义事件id", eventAttMap);
+
+
 
 3.2自定义事件id获得：
 
@@ -73,13 +79,15 @@ SjkAgent.onEvent(SampleActivity.this, "自定义的事件id");
 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。
 ![](http://www.shujike.com/images/android_guide_event1.png)
 
+![](http://www.shujike.com/images/android_guide_event2.png)
+
 3.3事件统计结果可在数极客后台查看。
 
 ###4.自定义属性统计
 
 4.1自定义属性接口：
 
-SjkAgent.postTags(SampleActivity.this, "自定义的属性id"); 
+SjkAgent.postAttribute(SampleActivity.this, "自定义的属性id");
 
 您可以通过添加自定义用户属性,对用户进行细分分析
 4.2自定义属性id获得：
