@@ -17,7 +17,8 @@ Android studio 集成 ：
 
 将下载好的jar包放入工程的 libs 目录下，之后在gradle中添加依赖。在项目的build.gradle 中添加如下代码
 
-dependencies {
+
+    dependencies {
 
     ......
 
@@ -25,7 +26,7 @@ dependencies {
 
     ......
 
-}
+    }
 
 之后clean project 即导入成功。
 
@@ -63,7 +64,7 @@ SDK所需权限如下：
 
 在需要统计事件的位置加入以下代码。
 
-                SjkAgent.postEvent(SampleActivity.this, "自定义事件id", “事件属性的Map”);
+    SjkAgent.postEvent(SampleActivity.this, "自定义事件id", “事件属性的Map”);
 
 3.2自定义事件id获得：
 
@@ -71,12 +72,12 @@ SDK所需权限如下：
 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。
 
 例：
-                
-                HashMap<String, String> eventAttMap = new HashMap<String, String>();
-                eventAttMap.put("m_Q1", "1"); //value 为自定义内容，根据统计需求填写
-                eventAttMap.put("m_Q2", "2");
-                eventAttMap.put("d_Q3", "3");
-                SjkAgent.postEvent(SampleActivity.this, "yyq", eventAttMap);
+
+    HashMap<String, String> eventAttMap = new HashMap<String, String>();
+    eventAttMap.put("m_Q1", "1"); //value 为自定义内容，根据统计需求填写
+    eventAttMap.put("m_Q2", "2");
+    eventAttMap.put("d_Q3", "3");
+    SjkAgent.postEvent(SampleActivity.this, "yyq", eventAttMap);
 
 ![](http://www.shujike.com/images/android_guide_event1.png)
 
@@ -92,18 +93,18 @@ SDK所需权限如下：
 
 设置单个属性：
 
-           SjkAgent.setAttribute(SampleActivity.this, "自定义的属性id", "2");
+    SjkAgent.setAttribute(SampleActivity.this, "自定义的属性id", "2");
 
 设置多个个属性：
 
-           HashMap<String, String> attributeMap = new HashMap<>();
-                attributeMap.put("自定义的属性id", "100");
-                attributeMap.put("自定义的属性id", "101");
-                attributeMap.put("自定义的属性id", "102");
-                SjkAgent.setAttribute(SampleActivity.this, attributeMap);
+    HashMap<String, String> attributeMap = new HashMap<>();
+    attributeMap.put("自定义的属性id", "100");
+    attributeMap.put("自定义的属性id", "101");
+    attributeMap.put("自定义的属性id", "102");
+    SjkAgent.setAttribute(SampleActivity.this, attributeMap);
 
 
-SjkAgent.postAttribute(SampleActivity.this, "自定义的属性id");
+    SjkAgent.postAttribute(SampleActivity.this, "自定义的属性id");
 
 您可以通过添加自定义属性,进行细分分析
 
@@ -114,7 +115,7 @@ SjkAgent.postAttribute(SampleActivity.this, "自定义的属性id");
 
 例：
 
-SjkAgent.setAttribute(SampleActivity.this, "yyq", "2");
+    SjkAgent.setAttribute(SampleActivity.this, "yyq", "2");
 
 ![](http://www.shujike.com/images/android_guide_arg.png)
 ![](http://www.shujike.com/images/android_guide_attribute.png)
@@ -123,8 +124,8 @@ SjkAgent.setAttribute(SampleActivity.this, "yyq", "2");
 ###5.调试模式
 在SDK初始化时可以设置debug模式，此模式下可查看SDK log 。代码如下
 
-        SjkAgent.setDebugEnabled(true);
-        SjkAgent.init(this);
+    SjkAgent.setDebugEnabled(true);
+    SjkAgent.init(this);
 
 ###6.页面访问统计
 在每个Activity的onResume方法中调用 SjkAgent.onResume(this); onPause方法中调用 SjkAgent.onPause(this);
@@ -133,7 +134,8 @@ SjkAgent.setAttribute(SampleActivity.this, "yyq", "2");
 ###7.按用户ID统计
 
 用户登录后调用
-SjkAgent.bindUserId(context, id); id为用户唯一标识。
+
+    SjkAgent.bindUserId(context, id); //id为用户唯一标识。
 
 实现用户留存和活跃分析等。
 
