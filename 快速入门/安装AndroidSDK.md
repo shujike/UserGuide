@@ -67,8 +67,6 @@ SDK所需权限如下：
 
 3.2自定义事件id获得：
 
-自定义事件id 尽量使用英文或拼音，不建议使用特殊字符或中文，且长度不能超过128个字节；
-
 使用自定义事件功能请先登陆数极客官网(<http://www.shujike.com>)， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。
 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。
 
@@ -92,16 +90,34 @@ SDK所需权限如下：
 
 4.1自定义属性接口：
 
+设置单个属性：
+
+           SjkAgent.setAttribute(SampleActivity.this, "自定义的属性id", "2");
+
+设置多个个属性：
+
+           HashMap<String, String> attributeMap = new HashMap<>();
+                attributeMap.put("自定义的属性id", "100");
+                attributeMap.put("自定义的属性id", "101");
+                attributeMap.put("自定义的属性id", "102");
+                SjkAgent.setAttribute(SampleActivity.this, attributeMap);
+
+
 SjkAgent.postAttribute(SampleActivity.this, "自定义的属性id");
 
-您可以通过添加自定义用户属性,对用户进行细分分析
-4.2自定义属性id获得：
+您可以通过添加自定义属性,进行细分分析
 
-自定义属性id 尽量使用英文或拼音，不建议使用特殊字符或中文，且长度不能超过128个字节；
+4.2自定义属性id获得：
 
 使用自定义属性功能请先登陆数极客官网 （www.shujike.com）， “自定义设置->自定义属性” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。
 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。
+
+例：
+
+SjkAgent.setAttribute(SampleActivity.this, "yyq", "2");
+
 ![](http://www.shujike.com/images/android_guide_arg.png)
+![](http://www.shujike.com/images/android_guide_attribute.png)
 
 
 ###5.调试模式
