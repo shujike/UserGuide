@@ -104,8 +104,6 @@ SDK所需权限如下：
     SjkAgent.setAttribute(SampleActivity.this, attributeMap);
 
 
-    SjkAgent.postAttribute(SampleActivity.this, "自定义的属性id");
-
 您可以通过添加自定义属性,进行细分分析
 
 4.2自定义属性id获得：
@@ -115,7 +113,7 @@ SDK所需权限如下：
 
 例：
 
-    SjkAgent.setAttribute(SampleActivity.this, "yyq", "2");
+    SjkAgent.setAttribute(SampleActivity.this, "vip", "2");
 
 ![](http://www.shujike.com/images/android_guide_arg.png)
 ![](http://www.shujike.com/images/android_guide_attribute.png)
