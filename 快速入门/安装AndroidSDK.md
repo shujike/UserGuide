@@ -74,10 +74,15 @@ SDK所需权限如下：
 例：
 
     HashMap<String, String> eventAttMap = new HashMap<String, String>();
-    eventAttMap.put("m_Q1", "1"); //value 为自定义内容，根据统计需求填写
+    eventAttMap.put("m_Q1", "1"); 
     eventAttMap.put("m_Q2", "2");
     eventAttMap.put("d_Q3", "3");
     SjkAgent.postEvent(SampleActivity.this, "yyq", eventAttMap);
+
+
+特别提醒：value 为自定义内容，根据统计需求填写，values 是用来做运算的，一定要设定为数字。
+例如您的事件属性是“点击次数” 那么您的value 就应该传 “1”，如果您传的是“2” 在统计事件点击次数时我们会根据value做sum，导致最终统计出的数据是真实数据的2倍。
+例如您的事件属性定义为“商品价格”  你的商品价格可能是 1元，3元，10.1元，那么value 应该传 1，3，10.1
 
 ![](http://www.shujike.com/images/android_guide_event1.png)
 
@@ -95,7 +100,7 @@ SDK所需权限如下：
 
     SjkAgent.setAttribute(SampleActivity.this, "自定义的属性id", "2");
 
-设置多个个属性：
+设置多个属性：
 
     HashMap<String, String> attributeMap = new HashMap<>();
     attributeMap.put("自定义的属性id", "100");
