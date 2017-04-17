@@ -8,7 +8,7 @@
     * [安装Android SDK](快速入门/安装AndroidSDK.md)
     * [安装iOS SDK](快速入门/安装iOSSDK.md)
 * [Dashboard总览]()
-    * [Dashboard](Dashboard总览/Dashboard.md)
+    * [Dashboard](Dashboard总览/Dashboard.md)
 * [获客分析]()
     * [自定义推广管理UTM](获客分析/自定义推广管理UTM.md)
     * [推广分析](获客分析/推广分析.md)
