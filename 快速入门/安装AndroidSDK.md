@@ -17,6 +17,7 @@ Android studio 集成 ：
 
 将下载好的jar包放入工程的 libs 目录下，之后在gradle中添加依赖。在项目的build.gradle 中添加如下代码
 
+
     dependencies {
 
     ......
