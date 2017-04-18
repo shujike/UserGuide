@@ -7,7 +7,7 @@
     * [安装JS SDK](快速入门/安装JSSDK.md)
     * [安装Android SDK](快速入门/安装AndroidSDK.md)
     * [安装iOS SDK](快速入门/安装iOSSDK.md)
- * [自定义事件](快速入门/自定义事件.md)
+  * [自定义事件](快速入门/自定义事件.md)
     * [自定义属性](快速入门/自定义属性.md)
 * [Dashboard总览]()
     * [Dashboard](Dashboard总览/Dashboard.md)
