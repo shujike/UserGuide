@@ -7,10 +7,7 @@
 
 1.2 下载和集成SDK
 
-[官网](<http://www.shujike.com>)直接下载。  
-
-[官网](http://www.shujike.com)直接下载。  
-[官网]<http://www.shujike.com>直接下载。  
+[官网](http://www.shujike.com)直接下载。
 
 Eclipse 集成 ：
 
