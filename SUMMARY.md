@@ -1,6 +1,6 @@
 # Summary
 
-**[Part I 开发者文档]()**
+* [Part I 开发者文档]()
     * [1. 申请试用](开发者文档/申请试用.md)
     * [2. 安装JS SDK](开发者文档/安装JSSDK.md)
     * [3. 安装Android SDK](开发者文档/安装AndroidSDK.md)
