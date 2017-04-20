@@ -1,13 +1,13 @@
 # Summary
 
-* __[Part I 开发者文档]()__
+* [Part I 开发者文档]()
     * [1. 申请试用](开发者文档/申请试用.md)
     * [2. 安装JS SDK](开发者文档/安装JSSDK.md)
     * [3. 安装Android SDK](开发者文档/安装AndroidSDK.md)
     * [4. 安装iOS SDK](开发者文档/安装iOSSDK.md)
     * [5. 自定义事件](开发者文档/自定义事件.md)
     * [6. 自定义属性](开发者文档/自定义属性.md)
-* __[Part Ⅱ 产品使用文档]()__
+* [Part Ⅱ 产品使用文档]()
 * [1. Dashboard总览](Dashboard总览/Dashboard.md)
 * [2. 获客分析]()
     * [2.1 自定义推广管理UTM](获客分析/自定义推广管理UTM.md)
