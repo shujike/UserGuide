@@ -28,7 +28,7 @@
 产品的具体广告系列名称、标语、促销代码等。示例：utm_campaign= data_analysis  
 ####2.4 utm_content 广告内容  
 用于区分相似内容或同一广告内的链接。示例：utm_content=logolink或utm_content=textlink  
-###2.5 utm_term 关键词  
+####2.5 utm_term 关键词  
 utm_term可标识付费推广关键字，对推广关键词进行分析。示例：utm_term=datanalysis  
 目前数极客对百度付费搜索关键词和其他搜索引擎关键词自动识别和保存，您在投放SEM广告时无需设定utm_term参数。  
 为了让您更容易理解UTM参数，我们一起看底下的案例：  
