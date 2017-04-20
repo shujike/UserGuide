@@ -96,11 +96,11 @@ SDK所需权限如下：
 
 ####4.1 自定义属性接口：
 
-**设置单个属性：
+**设置单个属性：**
 
     SjkAgent.setAttribute(SampleActivity.this, "自定义的属性id", "2");
 
-**设置多个属性：
+**设置多个属性：**
 
     HashMap<String, String> attributeMap = new HashMap<>();
     attributeMap.put("自定义的属性id", "100");
