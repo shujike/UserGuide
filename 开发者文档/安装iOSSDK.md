@@ -24,8 +24,31 @@
 ###2.基础功能集成  
 ####2.1添加初始化函数  
 在 AppDelegate 中引入#import "SjkAgent.h"并添加启动方法  
-####2.2自定义事件统计  
-####2.3自定义属性统计  
+`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    //开启SjkAgent调试日志 可以开启日志
+    [SjkAgent shareInstance].isLogEnabled = YES;
+    //启动SjkAgent
+    [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"pppp"];
+    
+    return YES;
+}`  
+###3.自定义事件统计  
+####3.1自定义事件接口  
+在需要统计事件的位置加入以下代码。  
+`[SjkAgent postEventevent:@"自定义事件id" dict:“事件属性的Map”];`  
+####3.2自定义事件id获得  
+使用自定义事件功能请先登陆数极客官网([http://www.shujike.com](http://www.shujike.com))， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK启动之后调用。  
+例:  
+`NSDictionary *eventAttMap = @{@"m_Q1":@"1",@"2":@"15",@"d_Q3":@"3"};
+[SjkAgent postEventevent:@"yyq" dict:eventAttMap];`  
+特别提醒：value 为自定义内容，根据统计需求填写，values 是用来做运算的，一定要设定为数字。 例如您的事件属性是“点击次数” 那么您的value 就应该传 “1”，如果您传的是“2” 在统计事件点击次数时我们会根据value做sum，导致最终统计出的数据是真实数据的2倍。
+例如您的事件属性定义为“商品价格” 你的商品价格可能是 1元，3元，10.1元，那么value 应该传 1，3，10.1  
+![](http://www.shujike.com/images/android_guide_event1.png)  
+![](http://www.shujike.com/images/android_guide_event3.png)  
+![](http://www.shujike.com/images/android_guide_event2.png)  
+事件统计结果可在数极客后台查看。  
+###4.自定义属性统计
 
 
 
