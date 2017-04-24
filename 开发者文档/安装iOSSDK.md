@@ -119,6 +119,20 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属�
 
 ![](http://www.shujike.com/images/android_guide_attribute.png)  
 
+###5. 自定义用户信息统计  
+
+设置用户信息:  
+
+```
+//设置用户信息
+UserBean *userBean = [[UserBean alloc]init];
+userBean.userId = @"788";
+userBean.userRegesterChannel = @"channel";
+userBean.userSex = @"userSex";
+....
+[SjkAgent bindUserInfo:userBean];  
+```
+
 
 
 
