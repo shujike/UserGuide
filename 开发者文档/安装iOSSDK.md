@@ -48,7 +48,24 @@
 ![](http://www.shujike.com/images/android_guide_event3.png)  
 ![](http://www.shujike.com/images/android_guide_event2.png)  
 事件统计结果可在数极客后台查看。  
-###4.自定义属性统计
+###4.自定义属性统计  
+####4.1自定义属性接口  
+设置单个属性:  
+`[SjkAgent setAttributeValue:@"自定义的属性id" key:@"2"];`  
+设置多个属性： 
+`NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属性id":@"101",@"自定义的属性id":@"102"};
+[SjkAgent setAttributeDict:attributeMap];`  
+您可以通过添加自定义属性,进行细分分析  
+####4.2自定义属性id获得  
+使用自定义属性功能请先登陆数极客官网 （[www.shujike.com](www.shujike.com)）， “自定义设置->自定义属性” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。  
+例:  
+`[SjkAgent setAttributeValue:@"vip" key:@"2"];`  
+![](http://www.shujike.com/images/android_guide_arg.png)  
+![](http://www.shujike.com/images/android_guide_attribute.png)  
+
+
+
+
 
 
 
