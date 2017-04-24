@@ -3,7 +3,7 @@
 
 ####1.1 获取AppKey  
 
-集成数极客SDK之前，您首先需要到数极客官网注册并且添加新应用，获得Appkey。  
+集成数极客SDK之前，您首先需要到数极客官网[注册](http://a.shujike.com/user/login?op=register)并且添加新应用，获得Appkey。  
 
 ####1.2 下载和集成SDK  
 
