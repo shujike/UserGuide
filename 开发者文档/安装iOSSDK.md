@@ -7,19 +7,20 @@
 
 ####1.2 下载和集成SDK  
 
-1.官网直接下载SDK;  
+1. 官网直接下载SDK;  
 
-2.进行安装文档的第1.3步;  
+2. 进行安装文档的第1.3步;  
 
 ####1.3 导入SDK  
 
 按照 以下步骤将SDK导入到您的项目中。  
 
-1.解压 iOS SDK 压缩文件;  
+1. 解压 iOS SDK 压缩文件;  
 
-2.添加 SjkAgent.h 和 libshujike-sdk-1.0.a 添加到您的 iOS 工程中;  
+2. 添加 SjkAgent.h 和 libshujike-sdk-1.0.a 添加到您的 iOS 工程中;  
 
-提醒: 记得勾选 "Copy items if needed"  
+提醒:  
+- 记得勾选 "Copy items if needed"  
 
 ####1.4 添加依赖库  
 
@@ -29,15 +30,18 @@
 |:---:|:---:|  
 |libz.tbd|用于 zip压缩解压缩的库|  
 
-提醒:添加项目依赖库的位置在 项目设置target -> 选项卡General -> Linked Frameworks and Libraries  
+提醒:  
+- 添加项目依赖库的位置在 项目设置target -> 选项卡General -> Linked Frameworks and Libraries  
 
 ####1.5 添加编译参数  
 
 在您的工程项目中添加编译参数  
 
-1.找到 Linking 设置  
-2.在 Other Linker Flags 中添加 -ObjC 参数，请注意大小写  
-提醒：Linking 设置位于 项目设置 target -> 选项卡 Build Settings，左上角选择 All。  
+1. 找到 Linking 设置  
+2. 在 Other Linker Flags 中添加 -ObjC 参数，请注意大小写  
+
+提醒：  
+- Linking 设置位于 项目设置 target -> 选项卡 Build Settings，左上角选择 All。  
 
 ###2. 基础功能集成  
 
@@ -45,13 +49,16 @@
 
 在 AppDelegate 中引入#import "SjkAgent.h"并添加启动方法  
 
-`  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
+
     //开启SjkAgent调试日志 可以开启日志
     [SjkAgent shareInstance].isLogEnabled = YES;
     //启动SjkAgent
     [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"pppp"];
     return YES;
-}`    
+}  
+```
 
 ###3. 自定义事件统计  
 
@@ -67,8 +74,10 @@
 
 例:  
 
-`NSDictionary *eventAttMap = @{@"m_Q1":@"1",@"2":@"15",@"d_Q3":@"3"};
-[SjkAgent postEventevent:@"yyq" dict:eventAttMap];`  
+```
+NSDictionary *eventAttMap = @{@"m_Q1":@"1",@"2":@"15",@"d_Q3":@"3"};
+[SjkAgent postEventevent:@"yyq" dict:eventAttMap];
+```
 
 特别提醒：value 为自定义内容，根据统计需求填写，values 是用来做运算的，一定要设定为数字。 例如您的事件属性是“点击次数” 那么您的value 就应该传 “1”，如果您传的是“2” 在统计事件点击次数时我们会根据value做sum，导致最终统计出的数据是真实数据的2倍。  
 
@@ -92,8 +101,10 @@
 
 设置多个属性： 
 
-`NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属性id":@"101",@"自定义的属性id":@"102"};
-[SjkAgent setAttributeDict:attributeMap];`  
+```
+NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属性id":@"101",@"自定义的属性id":@"102"};
+[SjkAgent setAttributeDict:attributeMap];
+```  
 
 您可以通过添加自定义属性,进行细分分析  
 
