@@ -110,7 +110,7 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属�
 
 ####4.2 自定义属性id获得  
 
-使用自定义属性功能请先登陆数极客官网 （[www.shujike.com](www.shujike.com)）， “自定义设置->自定义属性” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK初始化（SjkAgent.init(this)）之后调用。  
+使用自定义属性功能请先登陆数极客官网 （[www.shujike.com](www.shujike.com)）， “自定义设置->自定义属性” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK启动之后调用。  
 例:  
 
 `[SjkAgent setAttributeValue:@"vip" key:@"2"];`  
