@@ -28,7 +28,7 @@
 
 |    库名称    |       说明         |
 |:-----------:|:------------------:|
-|libz.tbd     |用于 zip压缩解压缩的库|  
+|libz.tbd     |用于 zip压缩        |  
 
 提醒:  
 - 添加项目依赖库的位置在 项目设置target -> 选项卡General -> Linked Frameworks and Libraries  
