@@ -45,14 +45,13 @@
 
 在 AppDelegate 中引入#import "SjkAgent.h"并添加启动方法  
 
-`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
-
+`  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
     //开启SjkAgent调试日志 可以开启日志
     [SjkAgent shareInstance].isLogEnabled = YES;
     //启动SjkAgent
     [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"pppp"];
     return YES;
-}`  
+}`    
 
 ###3. 自定义事件统计  
 
