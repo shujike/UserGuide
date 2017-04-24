@@ -21,6 +21,12 @@
 1.找到 Linking 设置  
 2.在 Other Linker Flags 中添加 -ObjC 参数，请注意大小写  
 提醒：Linking 设置位于 项目设置 target -> 选项卡 Build Settings，左上角选择 All。  
+###2.基础功能集成  
+####2.1添加初始化函数  
+在 AppDelegate 中引入#import "SjkAgent.h"并添加启动方法  
+####2.2自定义事件统计  
+####2.3自定义属性统计  
+
 
 
 
