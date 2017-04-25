@@ -74,7 +74,7 @@
 NSDictionary *eventAttMap = @{@"m_Q1":@"1",
                               @"2":@"15",
                               @"d_Q3":@"3"};
-[SjkAgent postEventevent:@"yyq" dict:eventAttMap];
+[SjkAgent postEventevent:@"自定义事件id" dict:eventAttMap];
 ```
 
 ####3.2 自定义事件id获得  
@@ -113,7 +113,9 @@ NSDictionary *eventAttMap = @{@"m_Q1":@"1",
 设置多个属性： 
 
 ```
-NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属性id":@"101",@"自定义的属性id":@"102"};
+NSDictionary *attributeMap = @{@"自定义的属性id":@"100",
+                               @"自定义的属性id":@"101",
+                               @"自定义的属性id":@"102"};
 [SjkAgent setAttributeDict:attributeMap];
 ```  
 
