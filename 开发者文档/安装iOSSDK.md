@@ -5,11 +5,9 @@
 
 集成数极客SDK之前，您首先需要到数极客官网[注册](http://a.shujike.com/user/login?op=register)并且添加新应用，获得Appkey。  
 
-####1.2 下载和集成SDK  
+####1.2 下载SDK  
 
-1. 官网直接下载SDK;  
-
-2. 进行安装文档的第1.3步;  
+官网直接下载SDK;  
 
 ####1.3 导入SDK  
 
@@ -64,18 +62,31 @@
 
 ####3.1 自定义事件接口  
 
-在需要统计事件的位置加入以下代码。  
+在需要统计事件的位置加入以下代码。 
 
-`[SjkAgent postEventevent:@"自定义事件id" dict:“事件属性的Map”];`  
+设置单个参数:  
+
+`[SjkAgent postEventevent:@"自定义事件id" value:@"m_Q1" key:@"1"];`  
+
+设置多个属性:  
+
+```
+NSDictionary *eventAttMap = @{@"m_Q1":@"1",
+                              @"2":@"15",
+                              @"d_Q3":@"3"};
+[SjkAgent postEventevent:@"yyq" dict:eventAttMap];
+```
 
 ####3.2 自定义事件id获得  
 
-使用自定义事件功能请先登陆数极客官网([http://www.shujike.com](http://www.shujike.com))， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK启动之后调用。 
+使用自定义事件功能请先登陆数极客官网([http://www.shujike.com](http://www.shujike.com))， “自定义设置->自定义事件” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK初始化之后调用。 
 
 例:  
 
 ```
-NSDictionary *eventAttMap = @{@"m_Q1":@"1",@"2":@"15",@"d_Q3":@"3"};
+NSDictionary *eventAttMap = @{@"m_Q1":@"1",
+                              @"2":@"15",
+                              @"d_Q3":@"3"};
 [SjkAgent postEventevent:@"yyq" dict:eventAttMap];
 ```
 
@@ -110,7 +121,7 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",@"自定义的属�
 
 ####4.2 自定义属性id获得  
 
-使用自定义属性功能请先登陆数极客官网 （[www.shujike.com](www.shujike.com)）， “自定义设置->自定义属性” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK启动之后调用。  
+使用自定义属性功能请先登陆数极客官网 （[www.shujike.com](www.shujike.com)）， “自定义设置->自定义属性” 页面中添加相应的事件id，然后服务器才会对相应的事件请求进行处理。 请在数极客SDK初始化之后调用。  
 例:  
 
 `[SjkAgent setAttributeValue:@"vip" key:@"2"];`  
