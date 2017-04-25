@@ -7,7 +7,7 @@
 
 ####1.2 下载SDK  
 
-官网直接下载SDK;  
+[官网](http://www.shujike.com)直接下载SDK;  
 
 ####1.3 导入SDK  
 
