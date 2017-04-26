@@ -140,7 +140,7 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",
 //设置用户信息
 UserBean *userBean = [[UserBean alloc]init];
 userBean.userId = @"788";
-userBean.userRegesterChannel = @"App Store";
+userBean.userRegesterChannel = @"微信";
 userBean.userSex = @"男";
 ....
 [SjkAgent bindUserInfo:userBean];  
