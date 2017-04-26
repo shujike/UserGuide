@@ -6,7 +6,7 @@
     * [3. 安装Android SDK](开发者文档/安装AndroidSDK.md)
     * [4. 安装Android 无埋点SDK](开发者文档/安装Android无埋点SDK.md)
     * [5. 安装iOS SDK](开发者文档/安装iOSSDK.md)
-    * [6. 安装iOS 无埋点SDK](开发者文档/安装IOS无埋点SDK.md)
+    * [6. 安装iOS 无埋点SDK](开发者文档/安装IOS无埋点SDK.md)
     * [7. 自定义事件](开发者文档/自定义事件.md)
     * [8. 自定义属性](开发者文档/自定义属性.md)
     
