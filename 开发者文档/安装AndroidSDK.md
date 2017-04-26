@@ -35,13 +35,13 @@
 ####2.1 配置AppKey  
 
 在AndroidManifest.xml 中配置Appkey，代码如下：  
-![](http://www.shujike.com/images/android_guide_appkey.png)  
+![](http://www.shujike.com/docsimg/android_guide_appkey.png)  
 
 ####2.2 添加权限  
 
 SDK所需权限如下：  
 
-![](http://www.shujike.com/images/android_guide_permis.png)  
+![](http://www.shujike.com/docsimg/android_guide_permis.png)  
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -84,11 +84,11 @@ SDK所需权限如下：
 例如您的事件属性是“点击次数” 那么您的value 就应该传 “1”，如果您传的是“2” 在统计事件点击次数时我们会根据value做sum，导致最终统计出的数据是真实数据的2倍。  
 例如您的事件属性定义为“商品价格”  你的商品价格可能是 1元，3元，10.1元，那么value 应该传 1，3，10.1  
 
-![](http://www.shujike.com/images/android_guide_event1.png)
+![](http://www.shujike.com/docsimg/android_guide_event1.png)
 
-![](http://www.shujike.com/images/android_guide_event3.png)
+![](http://www.shujike.com/docsimg/android_guide_event3.png)
 
-![](http://www.shujike.com/images/android_guide_event2.png)
+![](http://www.shujike.com/docsimg/android_guide_event2.png)
 
 事件统计结果可在数极客后台查看。
 
@@ -119,8 +119,8 @@ SDK所需权限如下：
 
     SjkAgent.setAttribute(SampleActivity.this, "vip", "2");
 
-![](http://www.shujike.com/images/android_guide_arg.png)
-![](http://www.shujike.com/images/android_guide_attribute.png)
+![](http://www.shujike.com/docsimg/android_guide_arg.png)
+![](http://www.shujike.com/docsimg/android_guide_attribute.png)
 
 
 ###5. 调试模式
@@ -131,7 +131,7 @@ SDK所需权限如下：
 
 ###6. 页面访问统计
 在每个Activity的onResume方法中调用 SjkAgent.onResume(this); onPause方法中调用 SjkAgent.onPause(this);
-![](http://www.shujike.com/images/android_guide_page.png)
+![](http://www.shujike.com/docsimg/android_guide_page.png)
 
 ###7. 按用户ID统计
 
