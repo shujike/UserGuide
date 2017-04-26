@@ -53,7 +53,7 @@
     //开启SjkAgent调试日志 可以开启日志
     [SjkAgent shareInstance].isLogEnabled = YES;
     //启动SjkAgent
-    [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"pppp"];
+    [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"App Store"];
     return YES;
 }  
 ```
@@ -72,7 +72,7 @@
 
 ```
 NSDictionary *eventAttMap = @{@"m_Q1":@"1",
-                              @"2":@"15",
+                              @"m_Q2":@"2",
                               @"d_Q3":@"3"};
 [SjkAgent postEventevent:@"自定义事件id" dict:eventAttMap];
 ```
@@ -85,7 +85,7 @@ NSDictionary *eventAttMap = @{@"m_Q1":@"1",
 
 ```
 NSDictionary *eventAttMap = @{@"m_Q1":@"1",
-                              @"2":@"15",
+                              @"m_Q2":@"2",
                               @"d_Q3":@"3"};
 [SjkAgent postEventevent:@"yyq" dict:eventAttMap];
 ```
@@ -140,13 +140,15 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",
 //设置用户信息
 UserBean *userBean = [[UserBean alloc]init];
 userBean.userId = @"788";
-userBean.userRegesterChannel = @"channel";
-userBean.userSex = @"userSex";
+userBean.userRegesterChannel = @"App Store";
+userBean.userSex = @"男";
 ....
 [SjkAgent bindUserInfo:userBean];  
 ```
 
+###6. 技术支持  
 
+如有任何问题可联系我们公司客服或技术人员进行解答。
 
 
 
