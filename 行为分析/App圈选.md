@@ -40,7 +40,7 @@
 
 ####4 打开圈选界面，填写相关信息
 
-![](http://www.shujike.com/docsimg/android_sdk_controller.png)
+![](http://www.shujike.com/docsimg/android_sdk_mark_view.png)
 
 如图：
 
