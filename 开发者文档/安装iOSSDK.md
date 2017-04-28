@@ -7,7 +7,7 @@
 
 ####1.2 下载SDK  
 
-[官网](http://www.shujike.com)下载SDK;  
+点击直接[下载](http://www.shujike.com/download/SjkAgent-IOS-SDK-1.0.zip)IOS SDK;  
 
 ####1.3 导入SDK  
 
@@ -15,7 +15,7 @@
 
 1. 解压 iOS SDK 压缩文件;  
 
-2. 添加 SjkAgent.h 和 libshujike-sdk-1.0.a 添加到您的 iOS 工程中;  
+2. 添加 SjkAgent.h 和 libSjkAgent.a 添加到您的 iOS 工程中;  
 
 提醒:  
 - 记得勾选 "Copy items if needed"   
