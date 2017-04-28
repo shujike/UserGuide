@@ -7,7 +7,7 @@
 
 ####1.2 下载SDK  
 
-点击直接[下载](http://www.shujike.com/download/SjkAgent-IOS-SDK-1.0.zip)IOS SDK;  
+点击直接 [下载](http://www.shujike.com/download/SjkAgent-IOS-SDK-1.0.zip) IOS SDK;  
 
 ####1.3 导入SDK  
 
