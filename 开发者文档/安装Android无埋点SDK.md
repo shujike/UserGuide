@@ -88,14 +88,15 @@
 ![](http://www.shujike.com/docsimg/android_sdk_appManifest.png)
 
 
+scheme内信息为 “sjk.”+appKey
+参考以下代码：
 
 
     //启动圈选功能需要的
     <intent-filter>
-        <data android:scheme="shujike"/>
-        <data android:host="应用的appKey"/>
+        <data android:scheme="sjk.1c7be246d5a051fb" />
         <action android:name="android.intent.action.VIEW" />
-
+        
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
     </intent-filter>
