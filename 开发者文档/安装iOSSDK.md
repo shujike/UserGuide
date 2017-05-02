@@ -7,7 +7,7 @@
 
 ####1.2 下载SDK  
 
-[官网](http://www.shujike.com)下载SDK;  
+点击 [直接下载](http://www.shujike.com/download/SjkAgent-IOS-SDK-1.0.zip) IOS SDK;  
 
 ####1.3 导入SDK  
 
@@ -15,23 +15,12 @@
 
 1. 解压 iOS SDK 压缩文件;  
 
-2. 添加 SjkAgent.h 和 libshujike-sdk-1.0.a 添加到您的 iOS 工程中;  
+2. 添加 SjkAgent.h 和 libSjkAgent.a 添加到您的 iOS 工程中;  
 
 提醒:  
-- 记得勾选 "Copy items if needed"  
+- 记得勾选 "Copy items if needed"   
 
-####1.4 添加依赖库  
-
-在您的工程项目中添加依赖  
-
-|    库名称    |       说明         |
-|:-----------:|:------------------:|
-|libz.tbd     |用于 zip压缩        |  
-
-提醒:  
-- 添加项目依赖库的位置在 项目设置target -> 选项卡General -> Linked Frameworks and Libraries  
-
-####1.5 添加编译参数  
+####1.4 添加编译参数  
 
 在您的工程项目中添加编译参数  
 
@@ -50,10 +39,10 @@
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
 
-    //开启SjkAgent调试日志 可以开启日志
-    [SjkAgent shareInstance].isLogEnabled = YES;
     //启动SjkAgent
     [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"App Store"];
+    //开启SjkAgent调试日志 可以开启日志
+    [SjkAgent shareInstance].isLogEnabled = YES;
     return YES;
 }  
 ```
