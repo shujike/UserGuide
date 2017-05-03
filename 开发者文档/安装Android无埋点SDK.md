@@ -7,7 +7,7 @@
 
 1.2 下载相关SDK
 
-[官网](http://www.shujike.com)直接下载。
+[官网](http://www.shujike.com)直接[下载](http://www.shujike.com/download/SjkAgent-Android-SDK-2.0.zip)。
 
 ###2.集成SDK
 
