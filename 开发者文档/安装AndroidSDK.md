@@ -219,7 +219,18 @@ scheme内信息为 “sjk.”+appKey
 SjkAgent.setDebugEnabled(true);
 SjkAgent.init(this);
 
-###7.技术支持  
+
+###7.注意事项
+
+7.1如果您启用了代码混淆，请在您的 proguard-rules.pro 中添加以下代码
+
+        -keep class com.shujike.analysis.** {
+            *;
+        }
+        -dontwarn com.shujike.analysis.**
+
+ 
+###8.技术支持  
 
 发现问题可联系我公司客服或技术人员进行解答。
 
