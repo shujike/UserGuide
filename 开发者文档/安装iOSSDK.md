@@ -83,11 +83,11 @@ NSDictionary *eventAttMap = @{@"m_Q1":@"1",
 
 例如您的事件属性定义为“商品价格” 你的商品价格可能是 1元，3元，10.1元，那么value 应该传 1，3，10.1  
 
-![](http://www.shujike.com/images/android_guide_event1.png)  
+![](http://www.shujike.com/docsimg/android_guide_event1.png)  
 
-![](http://www.shujike.com/images/android_guide_event3.png)  
+![](http://www.shujike.com/docsimg/android_guide_event3.png)  
 
-![](http://www.shujike.com/images/android_guide_event2.png)  
+![](http://www.shujike.com/docsimg/android_guide_event2.png)  
 
 事件统计结果可在数极客后台查看。  
 
@@ -117,9 +117,9 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",
 
 `[SjkAgent setAttributeValue:@"vip" key:@"2"];`  
 
-![](http://www.shujike.com/images/android_guide_arg.png)  
+![](http://www.shujike.com/docsimg/android_guide_arg.png)  
 
-![](http://www.shujike.com/images/android_guide_attribute.png)  
+![](http://www.shujike.com/docsimg/android_guide_attribute.png)  
 
 ###5. 自定义用户信息统计  
 
