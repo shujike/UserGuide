@@ -50,11 +50,11 @@
 
 把 URL Scheme 添加到您的项目，以便我们唤醒您的程序，进行圈选。
 
-URL Scheme 的格式是 sjk.xxxxxxxxxxxxxxxx(sjk.appkey)  
+URL Scheme 的格式是 sjk.xxxxxxxxxxxxxxxx(sjk.appkey)。  
 
-1. 添加您的 URL Scheme（sjk.xxxxxxxxxxxxxxxx）到项目中，URL Scheme 位于项目设置 target -> 选项卡 Info -> URL Types；  
+1. 添加您的 URL Scheme（sjk.xxxxxxxxxxxxxxxx）到项目中，URL Scheme 位于项目设置 target -> 选项卡 Info -> URL Types。  
 
-2. 在 AppDelegate 中调用函数 [SjkAgent handleUrl:] 来接收 URL  
+2. 在 AppDelegate 中调用函数 [SjkAgent handleUrl:] 来接收 URL。  
 
 ```
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
@@ -69,7 +69,7 @@ URL Scheme 的格式是 sjk.xxxxxxxxxxxxxxxx(sjk.appkey)
 ```  
 提醒：  
 
-* 如果您的 AppDelegate 中，实现了其中一个或者多个方法，请在已实现的函数中，调用 [SjkAgent handleUrl:];  
+* 如果您的 AppDelegate 中，实现了其中一个或者多个方法，请在已实现的函数中，调用 [SjkAgent handleUrl:]。  
 
 ```
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
@@ -77,11 +77,11 @@ URL Scheme 的格式是 sjk.xxxxxxxxxxxxxxxx(sjk.appkey)
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
 
 ```  
-* 如果以上所有函数都未实现，则请实现以下方法并调用 [SjkAgent handleUrl:];  
+* 如果以上所有函数都未实现，则请实现以下方法并调用 [SjkAgent handleUrl:]。  
 
 `- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation`  
 
-* 实际情况可能很复杂，请在调试时确保函数 [SjkAgent handleUrl:] 会被执行到
+* 实际情况可能很复杂，请在调试时确保函数 [SjkAgent handleUrl:] 会被执行到。
 
 ###4. 自定义事件统计  
 
