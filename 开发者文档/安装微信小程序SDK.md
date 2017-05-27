@@ -17,11 +17,14 @@ var dgt = require('./utils/dgt.js');
 在数极客后台生成代码后，添加到具体触发事件的位置即可，代码例子如下：
 
 var app = getApp();
+
 app.dgt.trackEvent("事件名","参数名","参数值");
+
 app.dgt.trackEvent("事件名",["参数1名","参数2名"......],["参数1值","参数2值"......]);
 
 ###4. 微信小程序的自定义用户属性
 在数极客后台生成代码后，添加到具体触发属性的位置即可，代码例子如下：
 
 var app = getApp();
+
 app.dgt.trackAttr("属性名","属性值");
