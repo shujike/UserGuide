@@ -7,7 +7,7 @@
 
 1.2 下载相关SDK
 
-请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-Android-SDK-2.0.zip)。
+请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-Android-SDK.zip)。
 
 ###2.集成SDK
 
@@ -53,7 +53,7 @@
 
 ###2.2.4 修改app目录下的build.gradle文件
 
-启动shujikegradleplugin 插件，导入shujike-android-sdk-2.0.0.aar包
+启动shujikegradleplugin 插件，导入shujike-android-sdk-2.0.1.aar包
 
     apply plugin: 'com.android.application'
     //启用插件
@@ -78,8 +78,8 @@
         }
     }
     dependencies {
-        //导入sdk包
-        compile(name: 'shujike-android-sdk-2.0.0', ext: 'aar')
+        //导入sdk包  (注意修改aar文件名称)
+        compile(name: 'shujike-android-sdk-2.0.1', ext: 'aar')
     }
 
 
