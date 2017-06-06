@@ -7,7 +7,7 @@
 
 ####1.2 下载SDK  
 
-请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-IOS-SDK-2.0.zip)。    
+请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-IOS-SDK.zip)。    
 
 ####1.3 导入SDK  
 
