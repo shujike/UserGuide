@@ -13,7 +13,7 @@
 
 ####2.1 集成所需的jar包
 
-    shujike-android-sdk-2.0.0.aar
+    shujike-android-sdk-2.0.1.aar
     shujike-agent-2.0.0.jar
     ShujikeGradlePlugin-2.0.0.jar
 
