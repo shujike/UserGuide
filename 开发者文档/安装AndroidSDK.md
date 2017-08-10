@@ -7,7 +7,7 @@
 
 1.2 下载相关SDK
 
-请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-Android-SDK.zip)。
+[点击下载SDK](http://www.shujike.com/download/SjkAgent-Android-SDK.zip)。
 
 ###2.集成SDK
 
@@ -222,16 +222,21 @@ SjkAgent.init(this);
 
 ###7.注意事项
 
-7.1如果您启用了代码混淆，请在您的 proguard-rules.pro 中添加以下代码
+7.1 如果您启用了代码混淆，请在您的 proguard-rules.pro 中添加以下代码：
 
         -keep class com.shujike.analysis.** {
             *;
         }
         -dontwarn com.shujike.analysis.**
 
- 
-7.2如遇无法启动圈选功能，请确保应用已允许悬浮窗权限。在设置页面允许悬浮窗权限。
+7.2 如果您成功集成SDK后事件发送不成功请尝试在 project 级别的 gradle.properties 中添加如下配置：
+        
+        android.enableBuildCache=false
 
+
+7.3 如遇无法启动圈选功能，请确保应用已允许悬浮窗权限。在设置页面允许悬浮窗权限。
+
+7.4 无埋点SDK不支持 Android Studio 的 instant run 特性，使用前需要关闭该特性。
 
 ###8.技术支持  
 
