@@ -217,28 +217,35 @@ scheme内信息为 “sjk.”+appKey
 在SDK初始化时可以设置debug模式，此模式下可查看SDK log 。代码如下
 
 SjkAgent.setDebugEnabled(true);
-SjkAgent.init(this);
+SjkAgent.init(this);  
 
+###7.采集Error数据  
 
-###7.注意事项
+7.1 自动采集奔溃日志，无需特殊配置。 
 
-7.1 如果您启用了代码混淆，请在您的 proguard-rules.pro 中添加以下代码：
+登录数极客官网后台查看  
+例如： 
+![](http://www.shujike.com/docsimg/ErrorAndroid.png)  
+
+###8.注意事项
+
+8.1 如果您启用了代码混淆，请在您的 proguard-rules.pro 中添加以下代码：
 
         -keep class com.shujike.analysis.** {
             *;
         }
         -dontwarn com.shujike.analysis.**
 
-7.2 如果您成功集成SDK后事件发送不成功请尝试在 project 级别的 gradle.properties 中添加如下配置：
+8.2 如果您成功集成SDK后事件发送不成功请尝试在 project 级别的 gradle.properties 中添加如下配置：
         
         android.enableBuildCache=false
 
 
-7.3 如遇无法启动圈选功能，请确保应用已允许悬浮窗权限。在设置页面允许悬浮窗权限。
+8.3 如遇无法启动圈选功能，请确保应用已允许悬浮窗权限。在设置页面允许悬浮窗权限。
 
-7.4 无埋点SDK不支持 Android Studio 的 instant run 特性，使用前需要关闭该特性。
+8.4 无埋点SDK不支持 Android Studio 的 instant run 特性，使用前需要关闭该特性。
 
-###8.技术支持  
+###9.技术支持  
 
 发现问题可联系我公司客服或技术人员进行解答。
 
