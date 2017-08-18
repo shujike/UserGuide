@@ -42,7 +42,7 @@
     //启动SjkAgent
     [SjkAgent startWithAppKey:@"d3deb0f9d3bdded2" appChannel:@"App Store"];
     //开启SjkAgent调试日志 可以开启日志
-    [SjkAgent shareInstance].isLogEnabled = YES;
+    [SjkAgent sharAgent].isLogEnabled = YES;
     return YES;
 }  
 ```
@@ -170,11 +170,19 @@ userBean.userSex = @"男";
 ....
 [SjkAgent bindUserInfo:userBean];  
 ```
-###7. 注意事项  
+###7. 采集Error数据  
+
+1. 自动采集奔溃日志，无需特殊配置。 
+
+登录数极客官网后台查看  
+例如：  
+![](http://www.shujike.com/docsimg/ErrorIos.png)
+
+###8. 注意事项  
 
 * 为了不影响圈选，请设置允许 HTTP 协议请求。  
 
-###8. 技术支持  
+###9. 技术支持  
 
 如有任何问题可联系我们公司客服或技术人员进行解答。
 
