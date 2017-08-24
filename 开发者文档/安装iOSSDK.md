@@ -11,7 +11,7 @@
 
 1. 添加 `pod 'SjkAgent'` 到 Podfile 文件中   
 
-2. 执行 `pod updete`   
+2. 执行 `pod update`   
 
 3. 然后进行安装文档的1.4步  
 
