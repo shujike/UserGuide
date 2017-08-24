@@ -15,9 +15,8 @@
 
 3. 然后进行安装文档的1.4步  
 
-- 注：如出现`[!] Unable to find a pod with name, author, summary, or description matching 'SjkAgent'` 警告
-
-  先`pod setup` 然后 `rm ~/Library/Caches/CocoaPods/search_index.json`。
+注：如出现`[!] Unable to find a pod with name, author, summary, or description matching 'SjkAgent'` 警告。
+先`pod setup` 然后 `rm ~/Library/Caches/CocoaPods/search_index.json`。
 
 #####2. 手动安装
 1. 请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-IOS-SDK.zip)。     
