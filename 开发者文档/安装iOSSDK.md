@@ -5,22 +5,22 @@
 
 集成数极客SDK之前，您首先需要到数极客官网(<http://www.shujike.com>)注册并且添加新应用，获得Appkey。  
 
-####1.2 选择SDK下载方式  
+####1.2 选择SDK安装方式  
 
-1. 使用CocoaPods安装  
+#####1. 使用CocoaPods安装  
 
-- 添加 `pod 'SjkAgent'` 到 Podfile 文件中   
+1. 添加 `pod 'SjkAgent'` 到 Podfile 文件中   
 
-- 执行 `pod updete`   
+2. 执行 `pod updete`   
 
-- 然后进行安装文档的1.4步  
+3. 然后进行安装文档的1.4步  
 
-注：如出现`[!] Unable to find a pod with name, author, summary, or description matching 'SjkAgent'` 警告
+- 注：如出现`[!] Unable to find a pod with name, author, summary, or description matching 'SjkAgent'` 警告
 
-先`pod setup` 然后 `rm ~/Library/Caches/CocoaPods/search_index.json`。
+  先`pod setup` 然后 `rm ~/Library/Caches/CocoaPods/search_index.json`。
 
-2. 手动安装
-- 请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-IOS-SDK.zip)。     
+#####2. 手动安装
+1. 请点击官网[下载地址](http://www.shujike.com/download/SjkAgent-IOS-SDK.zip)。     
 
 ####1.3 导入SDK  
 
