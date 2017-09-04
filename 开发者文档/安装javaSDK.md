@@ -69,15 +69,15 @@
     eventAttMap.put("ea_Q3", "4");
 
     //tp : 1-web，2-h5，3-ios，4-android，5-weixin小程序
-    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", "3");
+    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", TpType.IOS);
     //清除所有自定义属性
     sjkAgent.clearAllAttribute();
     //清除所有默认属性
     sjkAgent.clearAllDefaultAttribute();
-    sjkAgent.postEvent("click", eventAttMap, "", "4");
+    sjkAgent.postEvent("click", eventAttMap, "", TpType.ANDROID);
 
 
-postEvent(final String eventType, final HashMap<String, String> eventAttMap, final String ip, final String tp) 方法为发送异步请求方法，ip为客户端ip，用于统计客户端位置信息，tp为平台参数，用来区分平台（1-web，2-h5，3-ios，4-android，5-weixin小程序）
+postEvent(final String eventType, final HashMap<String, String> eventAttMap, final String ip, final TpType tp)) 方法为发送异步请求方法，ip为客户端ip，用于统计客户端位置信息，tp为平台参数，用来区分平台（ WEB,H5,IOS,ANDROID,WEIXIN）
 如果您不关系位置和平台您可以传空或者使用  postEvent(String eventType, HashMap<String, String> eventAttMap) 方法，此时tp默认为1，全部归为web平台
 
 
@@ -88,8 +88,8 @@ postEvent(final String eventType, final HashMap<String, String> eventAttMap, fin
 
 在需要统计事件的位置加入以下代码。
 
-    //tp : 1-web，2-h5，3-ios，4-android，5-weixin小程序
-    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", "3");
+    //tp : 为区分平台之用，现支持五大平台 WEB,H5,IOS,ANDROID,WEIXIN
+    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", TpType.IOS);
 
 3.2自定义事件id获得：
 
@@ -104,7 +104,7 @@ postEvent(final String eventType, final HashMap<String, String> eventAttMap, fin
     eventAttMap.put("m_Q2", "2");
     eventAttMap.put("d_Q3", "3");
     eventAttMap.put("ea_Q3", "4");
-    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", "3");
+    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", TpType.IOS);
 
 
 
