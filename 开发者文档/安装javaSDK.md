@@ -77,7 +77,11 @@
     sjkAgent.postEvent("click", eventAttMap, "", TpType.ANDROID);
 
 
-postEvent(final String eventType, final HashMap<String, String> eventAttMap, final String ip, final TpType tp)) 方法为发送异步请求方法，ip为客户端ip，用于统计客户端位置信息，tp为平台参数，用来区分平台（ WEB,H5,IOS,ANDROID,WEIXIN）
+postEvent(String eventType, HashMap<String, String> eventAttMap, String ip, TpType tp)) 方法为发送异步请求
+第一个参数：为事件id ，在创建自定义事件时自己创建的，具体参考下文 3.1自定义事件接口
+第二个参数：为事件属性，在创建自定义事件时自己创建的，和事件id一起创建的，具体参考下文 3.1自定义事件接口
+第三个参数：为客户端ip，用于统计客户端位置信息
+第四个参数：tp为平台参数，用来区分平台（ WEB,H5,IOS,ANDROID,WEIXIN）
 如果您不关系位置和平台您可以传空或者使用  postEvent(String eventType, HashMap<String, String> eventAttMap) 方法，此时tp默认为1，全部归为web平台
 
 
