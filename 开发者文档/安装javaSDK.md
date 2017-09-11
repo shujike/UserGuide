@@ -84,31 +84,31 @@
 公共属性字段参照：
 
     sessionId = "";//会话id
-    currentUrl = "";//当前页面
-    onlineTimes = "";//页面停留时间
-    visitorType = "";//1-新，0-老
-    appChannel = "";//渠道id
-    deviceType = "";//设备类型
-    deviceName = "";//设备型号名称
-    deviceBrand = "";//设备厂商
-    appVersion = "";//app 版本
+    currentUrl = "";//当前页面（当前页面url）
+    onlineTimes = "";//页面停留时间 （单位毫秒 如 29088）
+    visitorType = "";//1-新用户，0-老用户
+    appChannel = "";//渠道id（如 baidu，yingyongbao）
+    deviceType = "";//设备类型 （如 Phone，Tablet）
+    deviceName = "";//设备型号名称（如 小米 红米4）
+    deviceBrand = "";//设备厂商 （小米）
+    appVersion = "";//app 版本（如 v1.0.1）
     ua = "";//ua信息
-    resolution = "";//屏幕分辨率
-    networkType = "";//屏幕分辨率
-    cookiePlugin = "";//是否支持cookie
-    directorPlugin = "";//是否支持director插件
-    flashPlugin = "";//是否支持flash插件
-    gearsPlugin = "";//是否支持gears插件
-    javaPlugin = "";//是否支持javaPlugin插件
-    pdfPlugin = "";//是否支持pdfPlugin插件
-    quicktimePlugin = "";//是否支持quicktimePlugin插件
-    realplayerPlugin = "";//是否支持realplayerPlugin插件
-    silverlightPlugin = "";//是否支持silverlightPlugin插件
-    windowsmediaPlugin = "";//是否支持windowsmediaPlugin插件
+    resolution = "";//屏幕分辨率 （如1920x1080）
+    networkType = "";//网络类型（1：2g，2：3g，3：4g，4：wifi，5：未知）
+    cookiePlugin = "";//是否支持cookie（1：支持，0：不支持）
+    directorPlugin = "";//是否支持director插件（1：支持，0：不支持）
+    flashPlugin = "";//是否支持flash插件（1：支持，0：不支持）
+    gearsPlugin = "";//是否支持gears插件（1：支持，0：不支持）
+    javaPlugin = "";//是否支持javaPlugin插件（1：支持，0：不支持）
+    pdfPlugin = "";//是否支持pdfPlugin插件（1：支持，0：不支持）
+    quicktimePlugin = "";//是否支持quicktimePlugin插件（1：支持，0：不支持）
+    realplayerPlugin = "";//是否支持realplayerPlugin插件（1：支持，0：不支持）
+    silverlightPlugin = "";//是否支持silverlightPlugin插件（1：支持，0：不支持）
+    windowsmediaPlugin = "";//是否支持windowsmediaPlugin插件（1：支持，0：不支持）
     loadTime = "";//页面加载时间
-    longitude = "";//经度
-    latitude = "";//纬度
-    frequency = "";//session浏览次数
+    longitude = "";//经度（如 127.386848）
+    latitude = "";//纬度（如 49.159826）
+    frequency = "";//session浏览次数（如 1，2）
     browserEngine = "";//浏览器引擎
     browserName = "";//浏览器名称
     browserVersion = "";//浏览器版本
@@ -116,7 +116,7 @@
     registerRegion = "";//注册地点
     innerReferUrl = "";//站内跳转的refer_url
     firstReferUrl = "";//最早一次referurl
-    firstAccessTime = "";//上一跳URL
+    firstAccessTime = "";//	首次访问时间（如 2017-08-17）
     utm = "";//utm信息
 
 
