@@ -38,6 +38,9 @@
     defaultAttributeMap.put("appChannel", "channelId");
     defaultAttributeMap.put("sessionId", "101");
     defaultAttributeMap.put("visitType", "1");
+                .
+                .
+                .
     sjkAgent.setDefaultAttribute(defaultAttributeMap);
 
     //设置自定义属性
@@ -77,11 +80,59 @@
     sjkAgent.postEvent("click", eventAttMap, "", TpType.ANDROID);
 
 
+
+公共属性字段参照：
+
+    sessionId = "";//会话id
+    currentUrl = "";//当前页面
+    onlineTimes = "";//页面停留时间
+    visitorType = "";//1-新，0-老
+    appChannel = "";//渠道id
+    deviceType = "";//设备类型
+    deviceName = "";//设备型号名称
+    deviceBrand = "";//设备厂商
+    appVersion = "";//app 版本
+    ua = "";//ua信息
+    resolution = "";//屏幕分辨率
+    networkType = "";//屏幕分辨率
+    cookiePlugin = "";//是否支持cookie
+    directorPlugin = "";//是否支持director插件
+    flashPlugin = "";//是否支持flash插件
+    gearsPlugin = "";//是否支持gears插件
+    javaPlugin = "";//是否支持javaPlugin插件
+    pdfPlugin = "";//是否支持pdfPlugin插件
+    quicktimePlugin = "";//是否支持quicktimePlugin插件
+    realplayerPlugin = "";//是否支持realplayerPlugin插件
+    silverlightPlugin = "";//是否支持silverlightPlugin插件
+    windowsmediaPlugin = "";//是否支持windowsmediaPlugin插件
+    loadTime = "";//页面加载时间
+    longitude = "";//经度
+    latitude = "";//纬度
+    frequency = "";//session浏览次数
+    browserEngine = "";//浏览器引擎
+    browserName = "";//浏览器名称
+    browserVersion = "";//浏览器版本
+    registerTime = "";//注册时间
+    registerRegion = "";//注册地点
+    innerReferUrl = "";//站内跳转的refer_url
+    firstReferUrl = "";//最早一次referurl
+    firstAccessTime = "";//上一跳URL
+    utm = "";//utm信息
+
+
+
+事件发送：
+
 postEvent(String eventType, HashMap<String, String> eventAttMap, String ip, TpType tp)) 方法为发送异步请求
+
 第一个参数：为事件id ，在创建自定义事件时自己创建的，具体参考下文 3.1自定义事件接口
+
 第二个参数：为事件属性，在创建自定义事件时自己创建的，和事件id一起创建的，具体参考下文 3.1自定义事件接口
+
 第三个参数：为客户端ip，用于统计客户端位置信息
+
 第四个参数：tp为平台参数，用来区分平台（ WEB,H5,IOS,ANDROID,WEIXIN）
+
 如果您不关系位置和平台您可以传空或者使用  postEvent(String eventType, HashMap<String, String> eventAttMap) 方法，此时tp默认为1，全部归为web平台
 
 
