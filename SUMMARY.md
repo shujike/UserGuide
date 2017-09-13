@@ -5,7 +5,7 @@
     * [2. 安装JS SDK](开发者文档/安装JSSDK.md)
     * [3. 安装Android SDK](开发者文档/安装AndroidSDK.md)
     * [4. 安装iOS SDK](开发者文档/安装iOSSDK.md)
-    * [5. 安装微信小程序 SDK](开发者文档/安装微信小程序SDK.md)
+    * [5. 安装微信小程序 SDK](开发者文档/安装微信小程序SDK.md)
     * [6. 安装java SDK](开发者文档/安装javaSDK.md)
 * [Part Ⅱ 产品使用文档]()
 * [1. 总览](Dashboard总览/Dashboard.md)
