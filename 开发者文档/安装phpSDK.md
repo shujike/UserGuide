@@ -11,23 +11,16 @@
 
 ###2.php安装c扩展步骤
 
-2.1 解压sdk包,并进入shujike 目录
+2.1 解压sdk包,获得shujike.so 文件，将该文件放入PHP的扩展目录下
 
-    tar zxvf SjkAgent-php-SDK.tar.gz
-    cd shujike
-
-2.2 执行以下命令进行c扩展安装
-    phpize
-    ./configure --with-php-config=/usr/local/bin/php-config --enable-shujike
-    make clean
-    make
-    make test
-    make install
+例如：
     
-    //add the following statement into your the php.ini（linux environment）
+    mv shujike.so /usr/local/lib/php/extensions/no-debug-non-zts-20131226/
+
+2.2 配置php.ini
+
+    //add the following statement into your php.ini
     extension=shujike.so
-    //Windows environment
-    extension=shujike.dll
 
 2.3 检查c扩展安装情况
 
@@ -41,6 +34,7 @@
 
 
 2.4 使用Demo
+
 创建array 传入需要统计的key和value
 
     $a = array(
@@ -54,7 +48,7 @@
             .
         'utm'=>'');
         
-    postEvent($a,0,4);
+    postEvent($a,"8.8.8.8",4);
 
 您可以随时通过以下方法进行key value 的替换和删除
 
@@ -106,7 +100,7 @@
 
 事件发送：
 
-postEvent($a,0,4)
+postEvent($a,"8.8.8.8",4)
 
 第一个参数：为事件的所有统计信息的array
 
@@ -138,7 +132,7 @@ postEvent($a,0,4)
         'm_Q3'=>'3',
         'utm'=>'');
         
-        postEvent($a,0,4);
+        postEvent($a,"8.8.8.8",4);
 
 
 特别提醒：value 为自定义内容，根据统计需求填写，values 是用来做运算的，一定要设定为数字。
@@ -175,7 +169,7 @@ postEvent($a,0,4)
         'attributeId3'=>'102',
         'utm'=>'');
 
-        postEvent($a,0,4);
+        postEvent($a,"8.8.8.8",4);
         
 
 属性被定义以后所有的事件都会带上相关属性，当属性值发生改变时请重新设置属性值。
@@ -210,7 +204,7 @@ postEvent($a,0,4)
             .
         'utm'=>'');
         
-        postEvent($a,0,4);
+        postEvent($a,"8.8.8.8",4);
 
     
 
