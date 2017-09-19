@@ -9,13 +9,13 @@
 
 [点击下载SDK](http://www.shujike.com/download/SjkAgent-Java-SDK.zip)。
 
-###2.集成SDK
+###2.集成SDK步骤
 
-####2.1 导入所需的jar包
+2.1 导入所需的jar包
 
     SjkAgent-Java-SDK.zip
 
-####2.2 初始化 SDK
+2.2 初始化 SDK
 
 在程序入口处（如 public static void main(String[] args) 方法中）,初始化 Java SDK 实例。
 
@@ -26,7 +26,7 @@
 
 如果你想要统计渠道来源 请用第二种方式初始化
 
-####2.3 使用Demo
+2.3 使用Demo
 
 
 
@@ -144,6 +144,7 @@ postEvent(String eventType, HashMap<String, String> eventAttMap, String ip, TpTy
 在需要统计事件的位置加入以下代码。
 
     //tp : 为区分平台之用，现支持五大平台 WEB,H5,IOS,ANDROID,WEIXIN
+    //ip : 用于统计客户端位置信息
     sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", TpType.IOS);
 
 3.2自定义事件id获得：
@@ -158,8 +159,7 @@ postEvent(String eventType, HashMap<String, String> eventAttMap, String ip, TpTy
     eventAttMap.put("m_Q1", "1");
     eventAttMap.put("m_Q2", "2");
     eventAttMap.put("d_Q3", "3");
-    eventAttMap.put("ea_Q3", "4");
-    sjkAgent.postEvent("view", eventAttMap, "1.2.3.4", TpType.IOS);
+    sjkAgent.postEvent("yyq", eventAttMap, "1.2.3.4", TpType.IOS);
 
 
 
@@ -204,6 +204,7 @@ postEvent(String eventType, HashMap<String, String> eventAttMap, String ip, TpTy
 
     sjkAgent.setAttribute("attributeId", "2");
 
+属性被定义以后所有的事件都会带上相关属性，当属性值发生改变时请重新设置属性值。
 ![](http://www.shujike.com/docsimg/android_guide_arg.png)
 ![](http://www.shujike.com/docsimg/android_guide_attribute.png)
 

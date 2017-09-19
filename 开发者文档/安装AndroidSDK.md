@@ -9,28 +9,27 @@
 
 [点击下载SDK](http://www.shujike.com/download/SjkAgent-Android-SDK.zip)。
 
-###2.集成SDK
+###2.集成SDK步骤
 
-####2.1 集成所需的jar包
+    集成所需lib
 
     shujike-android-sdk-2.0.1.aar
     shujike-agent-2.0.0.jar
     ShujikeGradlePlugin-2.0.0.jar
 
-####2.2 集成步骤
 
 ![](http://www.shujike.com/docsimg/android_sdk_init.png)
 
 
-###2.2.1 导入shujike-android-sdk-2.0.0.aar
+2.1 导入shujike-android-sdk-2.0.0.aar
 
 将下载好的shujike-android-sdk-2.0.0.aar包拷贝到app目录下的libs目录中。
 
-###2.2.2 导入 shujike-agent-2.0.0.jar 和 ShujikeGradlePlugin-2.0.0.jar
+2.2导入 shujike-agent-2.0.0.jar 和 ShujikeGradlePlugin-2.0.0.jar
 
 在项目下新建一个名为plugin文件夹（名字可以自定义，但是要修改相应的build.gradle文件），将这个两个jar包拷贝进去。
 
-###2.2.3 修改项目目录下的build.gradle文件
+2.3 修改项目目录下的build.gradle文件
 
 为shujike-agent-2.0.0.jar 和 ShujikeGradlePlugin-2.0.0.jar两个jar包添加依赖。
 
@@ -51,7 +50,7 @@
         }
     }
 
-###2.2.4 修改app目录下的build.gradle文件
+2.4 修改app目录下的build.gradle文件
 
 启动shujikegradleplugin 插件，导入shujike-android-sdk-2.0.1.aar包
 
@@ -83,7 +82,7 @@
     }
 
 
-###2.2.5 修改app目录下的build.gradle文件
+2.5 修改app目录下的build.gradle文件
 
 ![](http://www.shujike.com/docsimg/android_sdk_appManifest.png)
 
@@ -113,7 +112,7 @@ scheme内信息为 “sjk.”+appKey
     
 
 
-###2.2.6 在app的Application中初始化SDK
+2.6 在app的Application中初始化SDK
 
     public class MyApplication extends Application {
         @Override
@@ -189,6 +188,7 @@ scheme内信息为 “sjk.”+appKey
 
     SjkAgent.setAttribute(SampleActivity.this, "vip", "2");
 
+属性被定义以后所有的事件都会带上相关属性，当属性值发生改变时请重新设置属性值。
 ![](http://www.shujike.com/docsimg/android_guide_arg.png)
 ![](http://www.shujike.com/docsimg/android_guide_attribute.png)
 
