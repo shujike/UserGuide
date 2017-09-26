@@ -13,7 +13,7 @@
 
     集成所需lib
 
-    shujike-android-sdk-2.0.1.aar
+    shujike-android-sdk-2.3.4.aar
     shujike-agent-2.0.0.jar
     ShujikeGradlePlugin-2.0.0.jar
 
@@ -21,9 +21,9 @@
 ![](http://www.shujike.com/docsimg/android_sdk_init.png)
 
 
-2.1 导入shujike-android-sdk-2.0.0.aar
+2.1 导入shujike-android-sdk-2.3.4.aar
 
-将下载好的shujike-android-sdk-2.0.0.aar包拷贝到app目录下的libs目录中。
+将下载好的shujike-android-sdk-2.3.4.aar包拷贝到app目录下的libs目录中。
 
 2.2导入 shujike-agent-2.0.0.jar 和 ShujikeGradlePlugin-2.0.0.jar
 
@@ -52,7 +52,7 @@
 
 2.4 修改app目录下的build.gradle文件
 
-启动shujikegradleplugin 插件，导入shujike-android-sdk-2.0.1.aar包
+启动shujikegradleplugin 插件，导入shujike-android-sdk-2.3.4.aar包
 
     apply plugin: 'com.android.application'
     //启用插件
@@ -78,7 +78,7 @@
     }
     dependencies {
         //导入sdk包  (注意修改aar文件名称)
-        compile(name: 'shujike-android-sdk-2.0.1', ext: 'aar')
+        compile(name: 'shujike-android-sdk-2.3.4', ext: 'aar')
     }
 
 
