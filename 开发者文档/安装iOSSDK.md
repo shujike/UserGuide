@@ -188,13 +188,17 @@ userBean.userSex = @"男";
 
 登录数极客官网后台查看  
 例如：  
-![](http://www.shujike.com/docsimg/ErrorIos.png)
+![](http://www.shujike.com/docsimg/ErrorIos.png)  
 
-###8. 注意事项  
+###8.实现APP与H5页面数据打通。  
+
+1.自动采集H5页面的数据，无需特殊配置。
+
+###9. 注意事项  
 
 * 为了不影响圈选，请设置允许 HTTP 协议请求。  
 
-###9. 技术支持  
+###10. 技术支持  
 
 如有任何问题可联系我们公司客服或技术人员进行解答。
 
