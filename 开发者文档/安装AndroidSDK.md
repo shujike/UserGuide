@@ -11,7 +11,7 @@
 
 ###2.集成SDK步骤
 
-    集成所需lib
+以下为lib最新版本：
 
     shujike-android-sdk-2.3.4.aar
     shujike-agent-2.0.0.jar
