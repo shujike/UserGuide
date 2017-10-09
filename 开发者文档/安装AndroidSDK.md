@@ -70,14 +70,14 @@
         ......
 
     }
-
+    //导入sdk包  
     repositories{
         flatDir {
             dirs 'libs'
         }
     }
     dependencies {
-        //导入sdk包  (注意修改aar文件名称)
+        //注意修改aar文件名称
         compile(name: 'shujike-android-sdk-2.3.4', ext: 'aar')
     }
 
