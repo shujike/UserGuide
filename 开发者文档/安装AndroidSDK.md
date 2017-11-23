@@ -7,7 +7,7 @@
 
 1.2 下载相关SDK
 
-[点击下载SDK](http://www.shujike.com/download/SjkAgent-Android-SDK.zip)。
+[<font color=#dc143f size=16>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-Android-SDK.zip) <font color=#dc143f size=18>(最新版本 V2.3.5)</font>。
 
 ###2.集成SDK步骤
 
