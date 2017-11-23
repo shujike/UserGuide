@@ -13,7 +13,7 @@
 
 以下为lib最新版本：
 
-    shujike-android-sdk-2.3.4.aar
+    shujike-android-sdk-2.3.5.aar
     shujike-agent-2.0.0.jar
     ShujikeGradlePlugin-2.0.0.jar
 
@@ -21,17 +21,17 @@
 ![](http://www.shujike.com/docsimg/android_sdk_init.png)
 
 
-2.1 导入shujike-android-sdk-2.3.4.aar
+2.1 导入shujike-android-sdk-x.x.x.aar
 
-将下载好的shujike-android-sdk-2.3.4.aar包拷贝到app目录下的libs目录中。
+将下载好的shujike-android-sdk-x.x.x.aar包拷贝到app目录下的libs目录中。
 
-2.2导入 shujike-agent-2.0.0.jar 和 ShujikeGradlePlugin-2.0.0.jar
+2.2导入 shujike-agent-x.x.x.jar 和 ShujikeGradlePlugin-x.x.x.jar
 
 在项目下新建一个名为plugin文件夹（名字可以自定义，但是要修改相应的build.gradle文件），将这个两个jar包拷贝进去。
 
 2.3 修改项目目录下的build.gradle文件
 
-为shujike-agent-2.0.0.jar 和 ShujikeGradlePlugin-2.0.0.jar两个jar包添加依赖。
+为shujike-agent-x.x.x.jar 和 ShujikeGradlePlugin-x.x.x.jar两个jar包添加依赖。
 
     buildscript {
         repositories {
@@ -52,7 +52,7 @@
 
 2.4 修改app目录下的build.gradle文件
 
-启动shujikegradleplugin 插件，导入shujike-android-sdk-2.3.4.aar包
+启动shujikegradleplugin 插件，导入shujike-android-sdk-x.x.x.aar包
 
     apply plugin: 'com.android.application'
     //启用插件
@@ -78,7 +78,7 @@
     }
     dependencies {
         //注意修改aar文件名称
-        compile(name: 'shujike-android-sdk-2.3.4', ext: 'aar')
+        compile(name: 'shujike-android-sdk-x.x.x', ext: 'aar')
     }
 
 
