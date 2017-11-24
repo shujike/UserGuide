@@ -5,9 +5,9 @@
 
 集成数极客SDK之前，您首先需要到数极客官网(<http://www.shujike.com>)注册并且添加新应用，获得Appkey
 
-1.2 下载相关SDK
+1.2 下载相关SDK(最低支持android 4.0 (14)版本)
 
-[<font color=#dc143f size=20>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-Android-SDK.zip) <font color=#dc143f size=20>(最新版本 V2.3.5)</font> ---最低支持android 4.0 （14）版本
+[<font color=#dc143f size=20>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-Android-SDK.zip) <font color=#dc143f size=20>(最新版本 V2.3.5)</font>
 
 ###2.集成SDK步骤
 
