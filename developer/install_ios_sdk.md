@@ -56,6 +56,7 @@
     //开启SjkAgent调试日志 可以开启日志
     [SjkAgent sharAgent].isLogEnabled = YES;
     return YES;
+
 }  
 ```
 ###3. 添加URL Scheme  
