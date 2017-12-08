@@ -1,0 +1,11 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "gitbook-plugin-github": {
+      "integrity": "sha1-UWbnY8/MQC1DKIC3pshcHFS1ao0=",
+      "version": "https://registry.npmjs.org/gitbook-plugin-github/-/gitbook-plugin-github-2.0.0.tgz"
+    },
+    "gitbook-plugin-insert-logo": "^0.1.4"
+  }
+}
