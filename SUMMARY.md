@@ -1,5 +1,6 @@
 # Summary
 
+* [产品介绍](README.md)
 * [Part I 开发者文档]()
     * [1. 申请试用](developer/trial.md)
     * [2. 安装JS SDK](developer/install_js_sdk.md)

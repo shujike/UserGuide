@@ -5,13 +5,17 @@
     "styles": {
         "website": "styles/website.css"
     },
-"plugins": ["toggle-chapters"],
+    "plugins": ["toggle-chapters"],
     "plugins": [
-        "github"
+        "github",
+        "insert-logo"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/shujike/UserGuide"
+        },
+        "insert-logo": {
+            "url": "http://www.shujike.com/images/sjk-logo.png"
         }
     },
     "links": {
