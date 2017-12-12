@@ -208,7 +208,9 @@ APP嵌套H5混合开发在互联网APP中非常多见。但对有h5嵌套的APP�
 
 ###10. 技术支持  
 
-如有任何问题可联系我们公司客服或技术人员进行解答。
+1. [ 查看集成Demo]（https://github.com/jishulabs/shujike-iOS-sdk-demo.git）  
+
+2. 如有任何问题可联系我们公司客服或技术人员进行解答。
 
 
 
