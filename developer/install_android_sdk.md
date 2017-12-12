@@ -126,15 +126,17 @@ scheme内信息为 “sjk.”+appKey
 
 2.7  验证SDK集成log    
 
-1. 集成SDK 成功后控制台打印 以下logInfo  
+2.7.1 集成SDK 成功后控制台打印 以下logInfo  
 
 `I/SjkLog: com.shujike.analysis.SjkAgent: set debug module success`  
  
-`I/SjkLog: com.shujike.analysis.SjkAgent: shujike  sdk initial success!`  
- 
+`I/SjkLog: com.shujike.analysis.SjkAgent: shujike  sdk initial success!` 
+
+`I/SjkLog: com.shujike.analysis.AopInterceptor: agentOnResumeEvent -- sjk auto collect data  is true`  
+  
 `I/SjkLog: com.shujike.analysis.ad:  post onResume() data success`  
     
-2. 点击按钮之后打印  
+2.7.2 点击按钮之后打印  
 
 `I/SjkLog: com.shujike.analysis.AopInterceptor: sjk Aop context -- agentDispatchTouchEvent`  
 
