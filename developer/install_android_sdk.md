@@ -122,9 +122,22 @@ scheme内信息为 “sjk.”+appKey
         }
     }
     
-到此SDK已经初步集成完毕。（如最终测试无法收到数据，请查看 8.注意事项）
+到此SDK已经初步集成完毕。（如最终测试无法收到数据，请查看 8.注意事项）  
 
+2.7  验证SDK集成log    
 
+1. 集成SDK 成功后控制台打印 以下logInfo  
+```
+I/SjkLog: com.shujike.analysis.SjkAgent: set debug module success 
+
+I/SjkLog: com.shujike.analysis.SjkAgent: shujike  sdk initial success!  
+
+I/SjkLog: com.shujike.analysis.ad:  post onResume() data success
+  
+```  
+2. 点击按钮之后打印  
+
+`I/SjkLog: com.shujike.analysis.AopInterceptor: sjk Aop context -- agentDispatchTouchEvent`  
 
 ###3.自定义事件统计
 
@@ -216,7 +229,8 @@ scheme内信息为 “sjk.”+appKey
 
 在SDK初始化时可以设置debug模式，此模式下可查看SDK log 。代码如下
 
-SjkAgent.setDebugEnabled(true);
+SjkAgent.setDebugEnabled(true);  
+
 SjkAgent.init(this);  
 
 ###7.采集Error数据  
@@ -261,7 +275,7 @@ APP嵌套H5混合开发在互联网APP中非常多见。但对有h5嵌套的APP�
 
 ###10.技术支持  
 
-1. [点击下载集成Demo](https://github.com/jishulabs/shujike-android-sdk-demo.git)  
+1. [ 查看集成Demo](https://github.com/jishulabs/shujike-android-sdk-demo.git)  
 
 2. 发现问题可联系我公司客服或技术人员进行解答。
 
