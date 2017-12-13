@@ -7,7 +7,7 @@
 
 1.2 下载相关SDK(最低支持android 4.0 (14)版本)
 
-[<font color=#dc143f size=20>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-Android-SDK.zip) <font color=#dc143f size=20>(最新版本 V2.3.5)</font>
+[<font color=#dc143f size=20>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-Android-SDK.zip) <font color=#dc143f size=20>(最新版本 V2.3.6)</font>
 
 ###2.集成SDK步骤
 
@@ -60,7 +60,7 @@
 
     android {
         compileSdkVersion 23
-        buildToolsVersion '23.0.2'
+        buildToolsVersion '23.0.1'
         defaultConfig {
             applicationId "com.shujike.sample"
             minSdkVersion 9
