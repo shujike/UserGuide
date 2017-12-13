@@ -47,7 +47,7 @@
     * [8.7 页面组](set/custom_page_group.md)
     * [8.8 复合指标](set/custom_formula.md)
     * [8.9 来源渠道](set/manage_channel.md)
-    * [8.10 推广渠道](set/manage_utm.md)
+    * [8.10 推广管理](set/manage_utm.md)
     * [8.11 视频录制](set/custom_playback.md)
 * [9. FAQ](FAQ.md)
 * [10. 名词解释](noun_interpretation.md)
