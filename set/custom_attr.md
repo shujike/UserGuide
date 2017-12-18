@@ -3,7 +3,7 @@
 <video id="video" controls="" preload="none" poster="http://www.shujike.com/images/attr.jpg">
       iframe height=498 width=510
       <source id="mp4" src="http://www.shujike.com/docsimg/自定义属性.mp4" type="video/mp4">
-    </video> 
+    </video>  
 自定义属性添加成功之后，在自定义列表中选择添加的属性，点击右侧[生成代码]， 复制生成的代码到触发此的位置，如:  
 
         _dgt.push(['trackAttr',['gender22'], ['属性的值']]);
