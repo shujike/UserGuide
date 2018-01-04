@@ -32,3 +32,8 @@ c．配置完成即可按照事件属性对特定指标进行拆解多维分析�
 |年龄|	_dgt.push(['track_age', '参数值']);|
 |注册省|	_dgt.push(['track_province', '参数值']);|
 |注册市|	_dgt.push(['track_city', '参数值']);|
+
+<video id="video" controls="" preload="none">
+<source id="mp4" src="http://www.shujike.com/docsimg/自定义属性.mp4"
+type="video/mp4">
+</video>
