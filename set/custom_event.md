@@ -43,3 +43,5 @@
 |确认收货|	_dgt.push(['track_receipt_confirm',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_receipt_confirm',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
 |申请退货|	_dgt.push(['track_refund_apply',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_refund_apply',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
 |提交退货|	_dgt.push(['track_refund_submit',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_refund_submit',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
+  
+<iframe height=498 width=510 src='http://player.youku.com/embed/XMzI0OTc5NzI2NA==' frameborder=0 'allowfullscreen'></iframe>
