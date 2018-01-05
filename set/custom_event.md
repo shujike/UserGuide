@@ -1,11 +1,11 @@
 ##自定义事件  
 在应用安装成功并且SDK成功引入到网站之后，就可以开始追踪事件，通过灵活的自定义事件采集更精准和全面的数据，实现更精准的业务分析。具体步骤如下：
 进入数极客应用后台，点击左侧系统管理，切换到系统管理页面之后点击左侧自定义设置，选择自定义事件，点击右上角添加自定义事件，按要求填写完内容点击保存，如图所示：  
-[![](http://www.shujike.com/images/event.jpg)](http://www.shujike.com/videos.html){:target="_blank"}  
+[![](http://www.shujike.com/images/event.jpg)](http://www.shujike.com/videos.html)
 
 <video id="video" controls="" preload="none">
-<source id="mp4" src="http://www.shujike.com/docsimg/自定义事件.mp4";
-width = "498" height = "810" alt="自定义事件" align=center
+<source id="mp4" src="http://www.shujike.com/docsimg/自定义属性.mp4";
+width = "498" height = "810" alt="自定义属性" align=center
 type="video/mp4">
 </video>  
 
