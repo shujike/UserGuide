@@ -2,6 +2,12 @@
 在应用安装成功并且SDK成功引入到网站之后，就可以开始追踪属性，具体步骤如下： 进入数极客应用后台，点击左侧系统管理，切换到系统管理页面之后点击左侧自定义设置，选择自定义属性，点击右上角新增用户属性，按要求填写完内容点击保存，如下所示： 
 ![](http://www.shujike.com/images/attr.jpg)  
 
+<video id="video" controls="" preload="none">
+<source id="mp4" src="http://www.shujike.com/docsimg/自定义属性.mp4";
+width = "300" height = "300" alt="自定义属性" align=center
+type="video/mp4">
+</video>
+
 自定义属性添加成功之后，在自定义列表中选择添加的属性，点击右侧[生成代码]， 复制生成的代码到触发此的位置，如:  
 
         _dgt.push(['trackAttr',['gender22'], ['属性的值']]);
