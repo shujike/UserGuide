@@ -10,7 +10,7 @@
 在用户行为数据分析过程中，用户属性、会话属性可以对所有事件指标进行拆解多维分析。但事件属性就只能拆解所对应的事件指标。比如属性“支付方式”（属性值：支付宝、微信、银联）就只能对 “支付订单”等指标进行拆解分析，而不能拆解“注册”“加入收藏”等指标。  
 对于行为数据分析中用事件属性拆解指标的需要，数极客大数据分析系统完全支持按事件属性拆解特定事件进行多维分析。  
 
-<iframe height=398 width=810 src='http://player.youku.com/embed/XMzI0OTgwNTU0MA==' frameborder=0 'allowfullscreen'></iframe>  
+<iframe height=498 width=810 src='http://player.youku.com/embed/XMzI0OTgwNTU0MA==' frameborder=0 'allowfullscreen'></iframe>  
 
 ### 如何创建事件属性
 a.进入自定义设置-事件，选择“新增自定义事件属性”。  
