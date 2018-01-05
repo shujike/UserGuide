@@ -35,6 +35,6 @@ c．配置完成即可按照事件属性对特定指标进行拆解多维分析�
 
 <video id="video" controls="" preload="none">
 <source id="mp4" src="http://www.shujike.com/docsimg/自定义属性.mp4"
-width = "100" height = "100" alt="自定义属性" align=center
+width = "300" height = "300" alt="自定义属性" align=center
 type="video/mp4">
 </video>
