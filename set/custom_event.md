@@ -1,7 +1,14 @@
 ##自定义事件  
 在应用安装成功并且SDK成功引入到网站之后，就可以开始追踪事件，通过灵活的自定义事件采集更精准和全面的数据，实现更精准的业务分析。具体步骤如下：
-进入数极客应用后台，点击左侧系统管理，切换到系统管理页面之后点击左侧自定义设置，选择自定义事件，点击右上角添加自定义事件，按要求填写完内容点击保存，如图所示：  
-![](http://www.shujike.com/images/event.jpg)   
+进入数极客应用后台，点击左侧系统管理，切换到系统管理页面之后点击左侧自定义设置，选择自定义事件，点击右上角添加自定义事件，按要求填写完内容点击保存，如图所示：  
+[![](http://www.shujike.com/images/event.jpg)](http://www.shujike.com/videos.html){:target="_blank"}  
+
+<video id="video" controls="" preload="none">
+<source id="mp4" src="http://www.shujike.com/docsimg/自定义事件.mp4";
+width = "498" height = "810" alt="自定义事件" align=center
+type="video/mp4">
+</video>  
+
 **事件方法：**调用事件的方法，只能输入字母和数字 如：login  必填  
 **事件名称：**事件对应的中文名称  必填  
 **事件类型：**分为浏览、交易、轻交互、重交互 必选  
@@ -42,4 +49,4 @@
 |支付失败|	_dgt.push(['track_pay_fail',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_pay_fail',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
 |确认收货|	_dgt.push(['track_receipt_confirm',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_receipt_confirm',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
 |申请退货|	_dgt.push(['track_refund_apply',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_refund_apply',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
-|提交退货|	_dgt.push(['track_refund_submit',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_refund_submit',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|
+|提交退货|	_dgt.push(['track_refund_submit',[订单id,订单金额,订单折扣金额,商品件数,spu,sku,一级类目,二级类目,三级类目]]); <br /> 例: _dgt.push(['track_refund_submit',[123456,20,19,2,'spu','sku','服装','男装','T恤']]);|  
