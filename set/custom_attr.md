@@ -3,8 +3,6 @@
 
 
 <video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/自定义属性.mp4" controls="controls"></video>
-<link href="http://vjs.zencdn.net/6.6.0/video-js.css" rel="stylesheet">
-<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 自定义属性添加成功之后，在自定义列表中选择添加的属性，点击右侧[生成代码]， 复制生成的代码到触发此的位置，如:  
 
