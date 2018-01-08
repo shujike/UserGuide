@@ -3,6 +3,92 @@
 
 
 <video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/自定义属性.mp4" controls="controls"></video>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+          .bg {position: relative; float: left;}
+          .fd_gif {position: absolute;z-index:99;top:0;left:0;margin-left: 120px; margin-top: 60px;}
+          input{
+              width: 60px;
+              height: 30px;
+          }
+        </style>
+        <script type="text/javascript">
+            function bofang(v){
+                var id = v.nextSibling;
+                while(id.nodeType!=1){
+                    id=id.nextSibling;
+                }
+                
+                id.style.display = "block";
+            }
+            function bofang1(v){
+                var id = v.parentNode;
+                id.style.display = "block";
+            }
+            function huachu(v){
+                
+                var id = v.nextSibling;
+                while(id.nodeType!=1){
+                    id=id.nextSibling;
+                }
+                
+                console.log(id);
+                id.style.display = "none";
+            }
+            function dianji(mdiv){
+                if (mdiv.value == "播放"){
+                    var v = mdiv.parentNode.previousSibling;
+                    while(v.nodeType!=1){
+                        v=v.previousSibling;
+                    }
+                    v.play();
+                    mdiv.value = "暂停";
+                }else{
+                    var v = mdiv.parentNode.previousSibling;
+                    while(v.nodeType!=1){
+                        v=v.previousSibling;
+                    }
+                    v.pause();
+                    mdiv.value = "播放";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <div class="bg">
+              <video width="300" loop="loop" onmouseover="bofang(this)" onmouseleave="huachu(this)">
+                <source src="mp4/baby.mp4"/>
+              </video>
+              <div class="fd_gif" style="display: none;">
+                  <input type="button" value="播放" onclick="dianji(this)" onmouseover="bofang1(this)" />
+              </div>
+            </div>
+            
+            <div class="bg">
+              <video width="300" loop="loop" onmouseover="bofang(this)" onmouseleave="huachu(this)">
+                <source src="mp4/gaoxiao.mp4"/>
+              </video>
+              <div class="fd_gif" style="display: none;">
+                  <input type="button" value="播放" onclick="dianji(this)" onmouseover="bofang1(this)" />
+              </div>
+            </div>
+            
+            <div class="bg">
+              <video width="300" loop="loop" onmouseover="bofang(this)" onmouseleave="huachu(this)">
+                <source src="mp4/xiaoniao.mp4"/>
+              </video>
+              <div class="fd_gif" style="display: none;">
+                  <input type="button" value="播放" onclick="dianji(this)" onmouseover="bofang1(this)" />
+             </div>
+        </div>
+    </body>
+</html>
+
 
 自定义属性添加成功之后，在自定义列表中选择添加的属性，点击右侧[生成代码]， 复制生成的代码到触发此的位置，如:  
 
