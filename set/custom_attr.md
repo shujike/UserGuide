@@ -4,6 +4,13 @@
 
 <video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/自定义属性.mp4" controls="controls"></video>
 
+<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+  controls preload="auto" width="640" height="264"
+  poster="http://video-js.zencoder.com/oceans-clip.png"
+  data-setup='{"example_option":true}'>
+  ...
+</video>
+
 自定义属性添加成功之后，在自定义列表中选择添加的属性，点击右侧[生成代码]， 复制生成的代码到触发此的位置，如:  
 
         _dgt.push(['trackAttr',['gender22'], ['属性的值']]);
