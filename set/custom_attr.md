@@ -6,7 +6,7 @@
 
 <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
   controls preload="auto" width="640" height="264"
-  poster="http://video-js.zencoder.com/oceans-clip.png"
+  poster="http://www.shujike.com/docsimg/自定义属性.mp4"
   data-setup='{"example_option":true}'>
   ...
 </video>
