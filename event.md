@@ -1,4 +1,5 @@
-##事件分析视频介绍    
+##事件分析    
+###视频介绍        
 <video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/事件分析.mp4" controls="controls"></video>    
 ##推广分析
 ###1. 您关心的推广问题
