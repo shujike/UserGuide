@@ -1,5 +1,7 @@
 ##来源渠道管理  
 通过渠道管理,可以对渠道进行追踪,我们提供直接访问和常见搜索引擎渠道识别,此类渠道无需人工添加。    
+###视频介绍    
+<video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/来源渠道.mp4" controls="controls"></video>    
 具体步骤如下： 进入数极客应用后台，点击左侧自定义设置下的渠道管理，点击右侧新增渠道，按要求填写完内容点击保存，如图所示：
 ![](http://www.shujike.com/images/h5/qudao1.png)   
 ###新增渠道参数  
