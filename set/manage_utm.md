@@ -1,7 +1,8 @@
 ##推广管理  
 
-如果您的推广信息比较多，可以利用此工具帮助您批量生成含有 UTM系列参数的推广链接。您可以通过在网址上添加UTM参数来统计来自不同推广媒介在我们产品上的留存和转化；可添加到网页上的UTM参数共5个：utm_source  utm_campaign  utm_medium  utm_content  utm_term 每个参数都需要匹配一个值。  
-
+如果您的推广信息比较多，可以利用此工具帮助您批量生成含有 UTM系列参数的推广链接。您可以通过在网址上添加UTM参数来统计来自不同推广媒介在我们产品上的留存和转化；可添加到网页上的UTM参数共5个：utm_source  utm_campaign  utm_medium  utm_content  utm_term 每个参数都需要匹配一个值。  
+###视频介绍    
+<video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/推广管理.mp4" controls="controls"></video>    
 ###1. 自定义推广活动UTM  
 通过添加自定义utm参数的方式跟踪您网站的自主投放渠道。    
 具体步骤如下： 进入数极客应用后台，点击左侧自定义设置下的推广管理（UTM），点击右上角新增推广，按要求填写完内容点击保存，如图所示：
