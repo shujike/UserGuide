@@ -1,4 +1,6 @@
 ##视频回放  
+###视频回放介绍  
+<video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/视频回放.mp4" controls="controls"></video>    
 ###1. 什么是视频回放  
 数极客视频回放是通过视频回放形式再现用户整个会话的每一个点击、滑动、输入等操作行为的定性分析工具，让您非常清晰了解衡量用户在您app、web、H5上的交互情况，便于您优化深入了解用户，优化产品体验。  
 ###2.	功能介绍  
