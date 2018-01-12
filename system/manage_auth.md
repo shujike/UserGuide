@@ -1,5 +1,7 @@
 ##权限管理  
 数极客支持按照功能、应用、数据等多个层级进行权限自定义配置，您可以选择让某些用户只看某些功能，某些应用，包括只能查看某些指标。  
+###视频介绍  
+<video style="width:800px;height:500px"  src="http://www.shujike.com/docsimg/权限管理.mp4" controls="controls"></video>    
 ###添加角色  
 进入数极客应用后台，点击左侧系统管理下的系统管理，选择权限管理，点击添加角色。    
 ![](http://www.shujike.com/docsimg/权限管理1.jpg)   
