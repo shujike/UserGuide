@@ -49,7 +49,7 @@
     * [8.9 来源渠道](set/manage_channel.md)
     * [8.10 推广管理](set/manage_utm.md)
     * [8.11 视频录制](set/custom_playback.md)
-    * [8.12 AB Test](set/custom_abtest.md)
+    * [8.12 AB 测试](set/custom_abtest.md)
 * [9. FAQ](FAQ.md)
 * [10. 名词解释](noun_interpretation.md)
 * [11. 系统管理]()
