@@ -9,7 +9,7 @@
 
 [点击下载SDK](http://www.shujike.com/download/SjkAgent-c++-SDK.zip)
 
-###2.集成c++库
+###2.集成c++库的步骤
 
 2.1 在程序首部包含数极客的SDK头文件shujike.hpp，代码如下
 	
