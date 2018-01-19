@@ -9,6 +9,7 @@
     * [5. 安装微信小程序 SDK](developer/install_wechat_sdk.md)
     * [6. 安装java SDK](developer/install_java_sdk.md)
     * [7. 安装php SDK](developer/install_php_sdk.md)
+    * [8. 安装c++ SDK](developer/install_c++_sdk.md)
 * [Part Ⅱ 产品使用文档]()
 * [1. 总览](overview/dashboard.md)
 * [2. 事件分析]()
