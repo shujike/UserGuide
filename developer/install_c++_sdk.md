@@ -27,7 +27,7 @@
 		#include <algorithm>
 		#include <map>
 
-		#include "shujike.hpp"   //[<font color=#dc143f size=20>此处为导入的数极客SDK</font>]
+		#include "shujike.hpp"   //导入数极客SDK
 
 		typedef map<string, string> param;
 
