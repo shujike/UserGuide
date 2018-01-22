@@ -6,14 +6,8 @@
         "website": "styles/website.css"
     },
     "plugins": ["toggle-chapters"],
-    "plugins": [
-        "github",
-        "insert-logo"
-    ],
+    "plugins": ["insert-logo"],
     "pluginsConfig": {
-        "github": {
-            "url": "https://github.com/shujike/UserGuide"
-        },
         "insert-logo": {
             "url": "http://www.shujike.com/images/sjk-logo.png"
         }
