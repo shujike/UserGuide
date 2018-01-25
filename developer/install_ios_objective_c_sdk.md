@@ -106,7 +106,7 @@ URL Scheme 的格式是 sjk.xxxxxxxxxxxxxxxx(sjk.appkey)。
 
 `[SjkAgent postEventevent:@"自定义事件id" value:@"m_Q1" key:@"1"];`  
 
-设置多个属性:  
+设置多个参数:  
 
 ```
 NSDictionary *eventAttMap = @{@"m_Q1":@"1",
