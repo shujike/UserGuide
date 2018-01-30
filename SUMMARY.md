@@ -55,9 +55,9 @@
 * [10. FAQ](FAQ.md)
 * [11. 名词解释](noun_interpretation.md)
 * [12. 系统管理]()
-    * [12.1 子账户管理](system/manage_user.md)
-    * [12.2 应用管理](system/manage_app.md)
-    * [12.3 账号设置与修改密码](system/manage_person.md)
+    * [12.1 子账户管理](system/manage_user.md)    
+    * [12.2 应用管理](system/manage_app.md)    
+    * [12.3 账号设置与修改密码](system/manage_person.md)    
     * [12.4 权限管理](system/manage_auth.md)    
     * [12.5 版权授权信息](system/copyright.md)
     
