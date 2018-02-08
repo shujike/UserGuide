@@ -12,7 +12,7 @@ curl -d 'client_id=d3deb0f9d3bdded2&client_secret=3d66561de55ca0c7e376ef7b0a344f
 clientid字段即appKey,clientsecret字段对应第一步生成的secretKey，后面的grant_type和scope参数保留默认值不变即可  
 返回结果：  
 {"access_token":"b86daeaec59f840bd0249e2cc0ebcd5d11c30fdc","expires_in":3600,"token_type":"Bearer","scope":"basic"}    
-//获取accesstoken成功 该token有效期1⼩小时，有效期内可以用于调用数据接口，过期后需要重新进行步骤二生成新的accesstoken  
+//获取accesstoken成功 该token有效期1小时，有效期内可以用于调用数据接口，过期后需要重新进行步骤二生成新的accesstoken  
 ###3.调用数据接口  
 以获取 事件分析——SEM日报 的表格数据为例  
 shell 调用接口：  
@@ -24,5 +24,6 @@ ics][0][name]=m_success&events[2][metrics][0][op]=SUM&events[2][metrics][1][name
 &dimensions[]=ak2&dimensions[]=ak9&dimensions[]=ak1&predicates[0][values][]=-&predicates[0][op]=like&predicates[0][name]=ak2
 &predicates[1][values][]=3400.0&predicates[1][op]=like&predicates[1][name]=ak9&relation=or&granularity=hour&time_range[]=201
 7-11-07&time_range[]=2017-11-07' http://a.shujike.com/api/source/calculate_grid  
+
 更多参考示例(<http://api.shujike.com/v1.0/doc/>)
 
