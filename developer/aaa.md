@@ -4,7 +4,7 @@
 ‘882109bca55d4e28ad8ff9c564897e63’    
 *注*：    
 **a.** secretKey不会保存，每次动态生成，关闭获取窗口后不会再展示，请妥善保存，如果忘记或丢失请重新生成     
-**b.** 调用域名为 http://a.shujike.com/    
+**b.** 调用域名为http://a.shujike.com/    
 ###2.申请oauth access_token  
 shell 调用接口：	
 curl -d 'client_id=d3deb0f9d3bdded2&client_secret=3d66561de55ca0c7e376ef7b0a344fc3&grant_type=client_credentials&scope=basic
