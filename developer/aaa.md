@@ -2,8 +2,8 @@
 ###1.生成Oauth Secret  
 在 /manage_app 页面选定要查看数据所属的应用，以“数极客”为例，appKey = '8dea3eba4ea2018e' 点击“生成Oauth Secret”按钮，获取secretKey=
 ‘882109bca55d4e28ad8ff9c564897e63’       
-*注*：
-**a.** secretKey不不会保存，每次动态生成，关闭获取窗⼝口后不不会再展示，请妥善保存，如果忘记或丢失请重新生成     
+*注*：    
+**a.** secretKey不会保存，每次动态生成，关闭获取窗⼝口后不不会再展示，请妥善保存，如果忘记或丢失请重新生成     
 **b.** 调用域名为 http://a.shujike.com/    
 ###2.申请oauth access_token  
 shell 调用接口：	
