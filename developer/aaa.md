@@ -9,7 +9,7 @@
 shell 调用接口：    
 
   curl -d 'client_id=d3deb0f9d3bdded2&client_secret=3d66561de55ca0c7e376ef7b0a344fc3&grant_type=client_credentials&scope=basic
-  ' http://a.shujike.com/api/oauth/clientCredentials     
+' http://a.shujike.com/api/oauth/clientCredentials     
 
 clientid字段即appKey,clientsecret字段对应第一步生成的secretKey，后面的grant_type和scope参数保留默认值不变即可  
 返回结果：    
