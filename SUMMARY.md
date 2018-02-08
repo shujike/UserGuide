@@ -11,7 +11,7 @@
     * [7. 安装java SDK](developer/install_java_sdk.md)
     * [8. 安装php SDK](developer/install_php_sdk.md)
     * [9. 安装c++ SDK](developer/install_c++_sdk.md)  
-    * [10. dga平台API调用示例](developer/api.md)    
+    * [10. dga平台API调用示例](developer/aaa.md)    
 * [Part Ⅱ 产品使用文档]()
 * [1. 总览](overview/dashboard.md)
 * [2. 事件分析]()
