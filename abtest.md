@@ -1,4 +1,4 @@
-##AB Test 使用文档
+##A/B测试
 ###1.扫码进入ABTest编辑模式(具体操作如下)
 
 1.1 登陆数极客(<http://www.shujike.com>)后台创建试验
