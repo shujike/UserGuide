@@ -53,12 +53,7 @@ A/B 测试是一种通过数据分析科学优化产品的方法，为同一个�
 此处可进行添加/删除版本等操作  
 ![](http://www.shujike.com/docsimg/abtest_add_version.png)  
 以下为修改元素属性的相关截图  
-![](http://www.shujike.com/docsimg/abtest_edit_text.png)  
-![](http://www.shujike.com/docsimg/abtest_edit_text_color.png)  
-![](http://www.shujike.com/docsimg/abtest_edit_text_size.png)  
-![](http://www.shujike.com/docsimg/abtest_edit_text_typeface.png)  
-![](http://www.shujike.com/docsimg/abtest_add_background_color.png)  
-![](http://www.shujike.com/docsimg/abtest_edit_location.png)  
+![](http://www.shujike.com/docsimg/abtest_edit.jpg)  
 **e.** 修改完成后将对元素属性进行更新  
 ![](http://www.shujike.com/docsimg/abtest_update_version.png)  
 ####5.3 后台设置版本的名称和相关配置信息  
