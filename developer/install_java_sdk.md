@@ -83,6 +83,7 @@
 
 公共属性字段参照：
 
+    firstPartyCookie = "";//数极客id
     sessionId = "";//会话id
     currentUrl = "";//当前页面（当前页面url）
     onlineTimes = "";//页面停留时间 （单位毫秒 如 29088）

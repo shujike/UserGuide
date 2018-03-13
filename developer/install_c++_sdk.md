@@ -61,7 +61,8 @@
 
 
 以下为详细的key value 对照表
-            
+
+        firstPartyCookie = "";//数极客id      
     	sessionId = "";//会话id
     	eventType = "";//事件类型
     	currentUrl = "";//当前页面（当前页面url）
