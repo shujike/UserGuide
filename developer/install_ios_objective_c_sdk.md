@@ -19,7 +19,7 @@
 先`pod setup` 然后 `rm ~/Library/Caches/CocoaPods/search_index.json`
 
 #####2. 手动安装  
-[<font color=#dc143f size=16>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-IOS-SDK.zip) <font color=#dc143f size=18>(最新版本 V2.4.0)</font>   
+[<font color=#dc143f size=16>点击下载SDK</font>](http://www.shujike.com/download/SjkAgent-IOS-SDK.zip) <font color=#dc143f size=18>(最新版本 V2.4.1)</font>   
 
 ####1.3 导入SDK  
 
@@ -54,7 +54,7 @@
     //启动SjkAgent
     [SjkAgent startWithAppKey:@"a9b4642966ced5c1" appChannel:@"App Store"];
     //开启SjkAgent调试日志 可以开启日志
-    [SjkAgent sharAgent].isLogEnabled = YES;
+    [SjkAgent shareAgent].isLogEnabled = YES;
     return YES;
 
 }  
@@ -179,7 +179,7 @@ NSDictionary *attributeMap = @{@"自定义的属性id":@"100",
 UserBean *userBean = [[UserBean alloc]init];
 userBean.userId = @"788";
 userBean.userRegesterChannel = @"微信";
-userBean.userSex = @"男";
+userBean.userGender = @"男";
 ....
 [SjkAgent bindUserInfo:userBean];  
 ```
